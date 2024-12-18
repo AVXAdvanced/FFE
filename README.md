@@ -2,11 +2,9 @@
 
 FFE is a new (and easier) way to share files with your friends (or really anyone who you want) without other people taking a peek.
 
-Practically, everyone who uses this program has his/her own Key File (also known as main_key). If you have a friend group of 3, for example, everyone shares their 
-key files with everyone. If you then encrypt a file (encryption will always accour from the main_key) your friends will also have your key file, which means that
-all of your friends can open your file. 
+Basically, you share your key file with all your friends, and then you can effortlessly share files between eachother without having to enter a password every time.
 
-FFE supports a single main key (which is changable) and up to 25 extra key files.
+FFE supports a single main key.
 
 FFE is written in Python, and is fairly lightweight and meant to be accessible for everyone.
 The Requirements will most likely decrease as testing goes on.
