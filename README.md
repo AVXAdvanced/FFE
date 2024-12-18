@@ -18,7 +18,7 @@ FFE requires the following:
 
  Windows 8 (x64/x86) or higher
  Microsoft Visual C++ 2015 Redistributable (x64/x86) - 14.0.23026 or higher.
- 500 MB Availible HDD/SSD space or more
+ 350 MB Availible HDD/SSD space or more (Calculated for FFE and C++ Redistributable)
 
 FFE features a basic malware detection feature (due to the vulnerabilities in Python) that informs you upon startup if suspicious programs are found running.
 Please report any known malware here in the GitHub (under issues preferrably) so I can make FFE safer for everyone.
