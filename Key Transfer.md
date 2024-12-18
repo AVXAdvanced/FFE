@@ -8,7 +8,7 @@ First, Install FFE as you would normally. The default Install folder is:
 
 C:\Users\[Your Windows User Name]\AppData\Local\Programs\FFE [Version Number]
 
-**DO NOT START THE PROGRAM YET!**
+***DO NOT START THE PROGRAM YET!***
 
 **2. Navigate to your old Installation folder**
 
