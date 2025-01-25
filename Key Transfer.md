@@ -20,7 +20,7 @@ C:\Users\[Your Windows User Name]\AppData\Local\Programs\FFE [Version Number]
 
 When you have navigated to the correct folder, copy the following files:
 
-main_key.key (Required)
+main_key.key
 
 **4. Navigate to your new Installation Folder**
 
