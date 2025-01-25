@@ -3,7 +3,7 @@
 ## Supported Versions
 
 Here you can find out which versions of FFE are supplied with Security Updates and support. We do not recommend using versions that are not supplied with security updates and support as you may be vulnerable
-and you will not recieve help. The Wiki may be innacurate for unsupported versions.
+and you will not recieve help. The Wiki may be inaccurate for unsupported versions.
 
 | Version | Support Status                                         |
 | ------- | -------------------------------------------------------|
