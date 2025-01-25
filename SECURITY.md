@@ -8,7 +8,7 @@ and you will not recieve help. The Wiki may be innacurate for unsupported versio
 | Version | Support Status                                         |
 | ------- | -------------------------------------------------------|
 | 0.5.1   | :white_check_mark: Fully Supported                     |
-| 0.5.0   | 🟨: No Security Updates, Support Available.            |
+| 0.5.0   | 🟨 No Security Updates, Support Available.            |
 
 ## Reporting a Vulnerability
 
