@@ -5,186 +5,14 @@ import time
 import json
 import psutil
 import random
-import hashlib
-import logging
-import base64
+import requests
+
 
 def clear_console():
     os.system('cls' if os.name == 'nt' else 'clear')
-
+    
 clear_console()
-
-def random_delay():
-    return random.uniform(0.1, 0.9)
-
-print("================================ MalClear =================================")
-print("CHECKING FOR SUSPICIOUS/MALICIOUS SOFTWARE ON YOUR COMPUTER. PLEASE WAIT...")
-time.sleep(2.7)
-
-clear_console()
-
-# THERE ARE NO SUSPICIOUS PROCESSES LISTED BELOW IN THE PUBLIC GITHUB FILE FOR SECURITY REASONS. THESE ENTRIES ARE AVAILIBLE IN THE EXECUTABLE VERSION OF FFE.
-
-def check_for_malicious_processes():
-    # List of suspicious or known malicious process names (you can expand this list)
-    suspicious_processes = []
-
-# THERE ARE NO SUSPICIOUS PROCESSES LISTED ABOVE IN THE PUBLIC GITHUB FILE FOR SECURITY REASONS. THESE ENTRIES ARE AVAILIBLE IN THE EXECUTABLE VERSION OF FFE.
-
-    # Get all running processes
-    for proc in psutil.process_iter(['pid', 'name']):
-        try:
-            # Check if the process name matches any suspicious names
-            if proc.info['name'].lower() in [sp.lower() for sp in suspicious_processes]:
-                clear_console()
-                print(f"""
-#################  - ERROR -  ###################
-#                                               #
-#      POSSIBLE MALWARE HAS BEEN DETECTED       #
-#              ON YOUR COMPUTER!                #
-#                                               #
-#       DUE TO THIS, FFE CANNOT CONTINUE!       #
-#                                               #
-#               ERR CODE: m0011                 #
-#     Search for this error code on GitHub:     #
-#         github.com/AVXAdvanced/FFE            # 
-#                                               #
-#              FLAGGED PROCESS:                 #
-#################################################                                               
-# {proc.info['name']} (PID: {proc.info['pid']}) 
-#################################################
-""")
-
-                response = input("")
-                if not response.strip():  # If the user just presses Enter
-                    clear_console()
-                    print("ntk.ffe.debugmenu")
-                    time.sleep(0.3)
-                    print("ffe.malclearskipper.c")
-                    print("ffe.trigger(key.enter(genlayout))")
-                    time.sleep(0.1)
-                    print("ffe.procflag(0)")
-                    print("ffe.check(procflag)")
-                    time.sleep(0.7)
-                    print("procflag=0(clear)")
-                    time.sleep(0.2)
-                    print("ffe.exit(0)")
-                    time.sleep(0.7)
-                    print("ffe.exitlog(0)")
-                    time.sleep(0.2)
-                    print("ffe.logsys set (1)")
-                    time.sleep(0.3)
-                    print("ffe.logsys(1)")
-                    time.sleep(0.1)
-                    print("py.del(ffe.exitfile) del now")
-                    time.sleep(0.3)
-                    print("filedel success")
-                    time.sleep(0.3)
-                    print("ffe.exitfile exsist? n")
-                    time.sleep(0.3)
-                    print("sdown proc (0)")
-                    time.sleep(0.8)
-                    print("ffe.verify(startup.ffe)")
-                    time.sleep(0.2)
-                    print("startup.ffe OK!")
-                    time.sleep(0.3)
-                    print("prestart.chk")
-                    time.sleep(0.3)
-                    print("ffe.verify(malclear)")
-                    time.sleep(0.1)
-                    print("malclear OK!")
-                    time.sleep(0.3)
-                    print("ffe.clearsys OK!")
-                    time.sleep(0.3)
-                    print("ffe.oschk")
-                    time.sleep(0.9)
-                    print("OS: OK!")
-                    time.sleep(0.3)
-                    print("FFE FILES OK!")
-                    time.sleep(0.3)
-                    print("curmode: -v")
-                    time.sleep(0.1)
-                    print("logfile.write:(en/ex mode: -v OK!)")
-                    time.sleep(0.3)
-                    print("prev stopcode: m0001")
-                    time.sleep(0.1)
-                    print("logfile.seldel(stopcode: m0001)")
-                    time.sleep(0.3)
-                    print("logfile.seldel OK!")
-                    time.sleep(0.2)
-                    print("Preparing ffe.startup...")
-                    time.sleep(0.3)
-                    print("OK!")
-                    time.sleep(0.3)
-                    print("Loading startup.ffe..")
-                    time.sleep(0.4)
-                    print("FFE WILL NOW CONTINUE.")
-                    time.sleep(1.4)
-                    clear_console()
-                    return True
-                else:
-                    clear_console()
-                    print("You have chosen to exit.")
-                    print("Please follow the steps listed in the previous menu and retry later.")
-                    print("")
-                    print("")
-                    return False
-        except (psutil.NoSuchProcess, psutil.AccessDenied, psutil.ZombieProcess):
-            continue
-
-   
-    print("")
-    return True
-
-if check_for_malicious_processes():
-    clear_console()
-    print("")
-    time.sleep(0.1)
-    clear_console()
-
-else:
-    print("FFE HAS ENCOUNTERED A FATAL ERROR AND WILL EXIT TO PREVENT DAMAGE TO YOUR FILES OR SYSTEM!")
-    print("ERR CODE m0055")
-    print("CLOSE THE PROGRAM WITH THE X LOCATED IN THE TOP RIGHT OF THE WINDOW! PLEASE NOTE THE ERROR CODE LISTED ABOVE AND OPEN A NEW ISSUE HERE: github.com/AVXAdvanced/FFE")
-    time.sleep(999999999)
-    time.sleep(999999999)
-    time.sleep(999999999)
-    time.sleep(999999999)
-    time.sleep(999999999)
-    time.sleep(999999999)
-    time.sleep(999999999)
-    time.sleep(999999999)
-    time.sleep(999999999)
-    time.sleep(999999999)
-    time.sleep(999999999)
-    time.sleep(999999999)
-    time.sleep(999999999)
-    time.sleep(999999999)
-    time.sleep(999999999)
-    time.sleep(999999999)
-    time.sleep(999999999)
-    time.sleep(999999999)
-    time.sleep(999999999)
-    time.sleep(999999999)
-    time.sleep(999999999)
-    time.sleep(999999999)
-    time.sleep(999999999)
-    time.sleep(999999999)
-    time.sleep(999999999)
-    time.sleep(999999999)
-    time.sleep(999999999)
-    time.sleep(999999999)
-    time.sleep(999999999)
-    time.sleep(999999999)
-    time.sleep(999999999)
-    time.sleep(999999999)
-    time.sleep(999999999)
-    time.sleep(999999999)
-    time.sleep(999999999)
-    time.sleep(999999999)
-
-clear_console()
-print("""
+input("""
 #################################################
 #                                               #
 #            #######   #######   #######        #
@@ -194,28 +22,12 @@ print("""
 #        ##        ##        #######            #
 #                                               #
 #               Welcome to FFE!                 #
-#                Version 0.4.1                  #
-#              Preparing Files...               #
+#                Version 0.5.1                  #
+#          github.com/AVXAdvanced/FFE           #
 #                                               #
+#             (c)2025 AVX_Advanced              #
 #################################################
-""")
-time.sleep(1)
-clear_console()
-
-clear_console()
-print("""
-#################################################
-#                                               #
-#            #######   #######   #######        #
-#           ##        ##        ##              #
-#          ######    #######   #######          #
-#         ##        ##        ##                #
-#        ##        ##        #######            #
-#                                               #
-#               Welcome to FFE!                 #
-#                Version 0.4.1                  #
-#                  Loading...                   #
-#                                               #
+#            Press ENTER to continue.           #
 #################################################
 """)
 time.sleep(1.3)
@@ -268,6 +80,19 @@ def decrypt_file(file_path, keys):
         print("Decryption failed: No valid keys found.")
     except Exception as e:
         print(f"Error during decryption: {e}")
+
+def replace_key():
+    # Get the path of the script's folder
+    script_dir = os.path.dirname(os.path.abspath(__file__))
+    main_key_path = os.path.join(script_dir, 'main_key.txt')  # Replace 'main_key.txt' with your actual filename
+
+    # Ask for the new key
+    new_key = input("Enter new key: ")
+
+    # Replace the key in the file
+    with open(main_key_path, 'w') as file:
+        file.write(new_key)
+    print(f"Key has been replaced in {main_key_path}.")
 
 def change_main_key():
     new_key = generate_random_key()
@@ -352,36 +177,33 @@ def manage_keys():
         print("Key deleted successfully!")
     except ValueError:
         clear_console()
-        print("Invalid input. Please enter a number.")
+        print("That doesn't seem right. Numbers only please!")
+
+# If you're reading this, that means you actually took time to look through FFE's code. Nice! 
+# (Un)Stragically placed by AVX_Advanced 
 
 def main_menu():
     clear_console()
-    clear_console()
     print("""
-################ - MAIN MENU - ##################
+################ - HOME MENU - ##################
 #                                               #
 #  1. Encrypt a File                            #
 #  2. Decrypt a File                            #
-#  3. Change Main Key                           #
-#  4. Add New Random Key                        #
-#  5. Import New Key                            #
-#  6. Export a Key                              #
-#  7. Manage Keys                               #
-#  8. Support FFE                               #
-#  9. About                                     #
+#  3. Key Update Guide                          #                                             
+#  4. Support FFE                               #
+#  5. About                                     #
 #                                               #
 #################################################
 #                   q. EXIT                     #
 #################################################
 """)
-    
     choice = input("Enter your choice: ")
     return choice
 
 def dev_menu():
     clear_console()
     print("""
-################# - DEV MENU  - #################
+############### - DEVELOPER MENU - ##############
 #                                               #
 #  1. Generate Random Key                       #
 #  2. View current main key                     #
@@ -391,8 +213,6 @@ def dev_menu():
 #              Q. EXIT DEV MENU                 #                                
 #################################################                                 
 """)
-                
-
     choice = input("Enter your choice: ")
     return choice
 
@@ -402,22 +222,41 @@ def main():
     if not os.path.exists("main_key.key"):
         key = generate_random_key()
         save_key(key, "main_key.key")
-        print("""
+        input("""
 ################## - ERROR - ####################
 #              No Main Key Found!               #
 #################################################
 #                                               # 
-#    The main security key file wasn't found    #
+#        The main key file wasn't found         #
+#          This is normal if you just           #
+#                installed FFE.                 #
 #                                               #
-#       A new key file is being created...      #
+#   If you attempted to update your key file,   #
+#     and you're seeing this please consult:    #
+#                                               #
+#     https://github.com/AVXAdvanced/FFE/       #
+#                                               #
 #                                               #
 #################################################
-#                Please Wait...                 #
+#          A new Key File was created.          #
+#            Press ENTER to continue.           #
 #################################################
 """)
-        time.sleep(2.3)
+        time.sleep(6)
         clear_console()
-        input("====== PRESS ENTER TO CONTINUE ======")
+        input("""
+################### - INFO - ####################
+#                                               #
+#      New Key File created successfully!       #
+#                                               #
+#      To use an external key file please       #
+#        select "Key File Update Guide"         #
+#              in the home menu.                #
+#                                               #
+#################################################                                               
+#          Press Enter to continue...           #
+#################################################
+""")
 
     main_key = load_key("main_key.key")
     keys = load_keys()
@@ -427,135 +266,145 @@ def main():
     while True:
         choice = main_menu()
         if choice == "1":
+            clear_console()
             file_to_encrypt = input("""
 ################  - ENCRYPT - ###################
-#   USING THIS FUNCTION YOU CAN ENCRYPT FILES   #
+#          Here you can encrypt files.          #
+#          Any file type is supported.          #
 #                                               #
-#      THIS WILL STOP ANYONE BESIDES YOU        #
-#    AND THE PEOPLE THAT HAVE YOUR KEY FILE     #
-#          FROM OPENING YOUR FILES              #
+#      Remember to back up your key file.       #
+#  If it's lost your files CANNOT be recovered. #
 #                                               #
 #################################################
-#    ENTER THE PATH OF THE FILE YOU WANT TO     #
-#           ENCRYPT OR DRAG IT HERE             # 
+#    Enter the path of the file you want to     #
+#    encrypt or drag it here from explorer.     # 
 #################################################
 """)
             encrypt_file(file_to_encrypt, cipher)
-            input("Press Enter to go back to the main menu...")
+            input("Press Enter to go back to the home menu...")
+            clear_console()
         elif choice == "2":
-            file_to_decrypt = input("Enter the path of the encrypted file: ")
+            clear_console()
+            file_to_decrypt = input("""
+################  - DECRYPT - ###################
+#          Here you can decrypt files.          #
+#       You can only decrypt ".enc" files.      #
+#                                               #
+#      This will only work if you have the      #
+#      matching key file to the file that       #
+#             you wish to decrypt.              #
+#                                               #
+#################################################
+#    Enter the path of the file you want to     #
+#    decrypt or drag it here from explorer.     # 
+#################################################
+""")
             decrypt_file(file_to_decrypt, keys)
-            input("Press Enter to go back to the main menu...")
-        elif choice == "3":
-            change_main_key()
-            input("Press Enter to go back to the main menu...")
+            input("Press Enter to go back to the home menu...")
+        elif choice == "":
+            replace_key()
         elif choice == "4":
-            add_key()
-            input("Press Enter to go back to the main menu...")
-        elif choice == "5":
-            import_key()
-            input("Press Enter to go back to the main menu...")
-        elif choice == "6":
-            export_key()
-            input("Press Enter to go back to the main menu...")
-        elif choice == "8":
             clear_console()
             print("We're glad to see that you are interested in supporting FFE!")
             print("There are many ways you can support the FFE project.")
             print("For example, you can:")
             print("")
             print("- Give us ideas or make new concepts")
-            print("- Report known malware (in the form of [program].exe preferrably) to keep FFE safe")
             print("- Request changes or new features")
             print("")
-            print("This is all possible in the FFE GitHub! There you can ask questions, make comments and much much more!")
+            print("This is all possible in the FFE GitHub! There you can make comments, suggestions, and feature requests.")
             print("https://github.com/AVXAdvanced/FFE")
             print("")
-            print("No, I DO NOT accept any form of financial support.")
-            print("You can (and should!) ask questions! I will gladly answer them for you.")
-            print("I'm sure someone from the FFE community over on GitHub can also help you!")
+            print("You can (and should) ask questions! I (or someone from the community) will surely answer them for you.")
             print("")
-            print("Thanks for using FFE and considering helping us out!")
+            print("Thanks for using FFE and considering to help us out!")
             print("")
             print("")
-            input("Press Enter to go back to the main menu...")
-        elif choice == "7":
+            input("Press Enter to go back to the home menu...")
+        elif choice == "3":
+            clear_console()
+            input("""
+############  - KEY UPDATE GUIDE -  #############
+#                                               #
+#      1. Locate your FFE install folder.       #
+#   2. Drag your new key file into the folder.  #
+#    3. If Windows tells you that file already  #
+#           exists, select "Replace".           #
+#                                               #
+#         For more information, visit:          #
+#          github.com/AVXAdvanced/FFE           #
+#                                               #
+#################################################
+#  Press ENTER to go back to the home menu...   #
+#################################################
+""")
+        elif choice == "":
             manage_keys()
-            input("Press Enter to go back to the main menu...")
-        elif choice == "9":
+            input("Press Enter to go back to the home menu...")
+        elif choice == "5":
             clear_console()
             print("""
 #################  - ABOUT -  ###################
 #                                               #
 #         FFE (Friend File Encryptor)           #
-#                Version 0.5.0                  #
+#              Version 0.5.1 Beta               #
+#             Build: FFE1252025LYEE             #
 #                                               #
-#             Python Version 3.13               #
-#           MalClear Version 0.1.1A             #
 #                                               #
-#               @AVX_Advanced                   #
-#               and @Kurt2012                   #
-#                                               # 
+#            (c)2025 AVX_Advanced               #
+#       Do not copy this program without        #
+#      permission of the original creator.      #
+#                                               #
 #################################################
 """)
-            input("Press Enter To Return to Main Menu")
+            input("Press Enter to go back to the home menu...")
                   
-
-        elif choice == "dev":  
+        elif choice == "":  
             while True:
                 dev_choice = dev_menu()
                 if dev_choice == "1":
                     clear_console()
                     random_key = generate_random_key()
                     print(f"Generated Key: {random_key.decode()}")
-                    input("Press Enter to go back to developer menu...")
+                    input("Press Enter to go back to the developer menu...")
                 elif dev_choice == "2":
                     clear_console()
                     print(f"Current Main Key: {main_key.decode()}")
-                    input("Press Enter to go back to developer menu...")
+                    input("Press Enter to go back to the developer menu...")
                 elif dev_choice == "3":
                     clear_console()
-                    print("FFE - Friend File Encryptor Version 0.5.0B (English)")
+                    print("FFE - Friend File Encryptor Version 0.5.1B (English)")
                     print("Developer Beta")
-                    print("Build: FFE041-11122024")
+                    print("Build: FFE1252025LYEE")
                     print("TUI (cmd-line) (pwrshell) Version")
-                    print("Python Version 3.13.0 (64-Bit) ")
-                    print("Python Extention Version v2024.20.0")
-                    print("Pylance Extention Version v2024.11.1")
-                    print("Python Debugger Extention v2024.12.0")
-                    print("Visual Code Version 1.94")
+                    print("Python Version 3.13.1 (64-Bit) ")
                     print("")
                     print("")
-                    input("Press Enter to go back to developer menu...")
+                    input("Press Enter to go back to the developer menu...")
                 elif dev_choice == "q":
                     break
                 elif dev_choice == "Q":
                     break
                 else:
                     clear_console()
-                    print("###### -INVALID CHOICE! PRESS ENTER TO RETURN TO MAIN MENU!- ######")
+                    print("That choice ain't valid. Seems like you mistyped. Please retry.")
         elif choice == "q":
             clear_console()
-            print("""
+            input("""
 ################### - EXIT - ####################
 #                                               #
 #         You have chosen to exit FFE.          #
 #                                               #
-#       FFE is currently cleaning up and        #
-#                 finalizing.                   #
-#                                               #
-#   Once this process is complete, the program  #
-#                  will exit.                   #
+#              Have a nice day!                 #                  
 #                                               #
 #################################################
-#                Please Wait...                 #
+#             Press ENTER to exit.              #
 #################################################
 """)
-            time.sleep(3)
             clear_console()
             sys.exit()
         else:
-            print("Invalid choice. Please try again.")
+            print("That choice ain't valid. Seems like you mistyped. Please retry.")
             input("Press Enter to go back to the main menu...")
 
 if __name__ == "__main__":
