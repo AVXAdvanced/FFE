@@ -1,7 +1,6 @@
 from cryptography.fernet import Fernet
 import os
 import sys
-import time
 import json
 
 def clear_console():
@@ -18,7 +17,7 @@ input("""
 #        ##        ##        #######            #
 #                                               #
 #               Welcome to FFE!                 #
-#                Version 0.5.2                  #
+#                Version 0.6.0                  #
 #          github.com/AVXAdvanced/FFE           #
 #                                               #
 #             (c)2025 AVX_Advanced              #
@@ -39,7 +38,7 @@ def fesys_load_key(filename):
     with open(filename, "rb") as key_file:
         return key_file.read()
 
-def encrypt_file(file_path, cipher):
+def fesys_encrypt_file(file_path, cipher):
     try:
         with open(file_path, "rb") as file:
             file_data = file.read()
@@ -47,14 +46,28 @@ def encrypt_file(file_path, cipher):
         encrypted_data = cipher.encrypt(file_data)
         with open(encrypted_file_path, "wb") as encrypted_file:
             encrypted_file.write(encrypted_data)
-        print("File encrypted successfully!")
+        input("""
+#################################################
+#       Success! Press ENTER to continue.       #
+#################################################
+""")
     except Exception as e:
-        print(f"Error during encryption: {e}")
+        input("""
+#################################################
+#      An error occoured. Please Try Again.     #
+#          Press ENTER to continue.             #
+#################################################
+""")
 
-def decrypt_file(file_path, keys):
+def fesys_decrypt_file(file_path, keys):
     try:
         if not file_path.endswith(".enc"):
-            print("The specified file is not an encrypted file.")
+            input("""
+#################################################
+#           That isn't a valid file.            #
+#           Press ENTER to continue.            #
+#################################################
+""")
             return
 
         with open(file_path, "rb") as encrypted_file:
@@ -68,45 +81,34 @@ def decrypt_file(file_path, keys):
                 with open(decrypted_file_path, "wb") as decrypted_file:
                     decrypted_file.write(decrypted_data)
                 key_str = key.decode() if isinstance(key, bytes) else key
-                input("""#################################################
-                         #       Success! Press ENTER to continue.       #
-                         #################################################
+                input("""
+#################################################
+#       Success! Press ENTER to continue.       #
+#################################################
                          """)
                 return
             except Exception:
                 continue  
 
-        input("""#################################################
-                 #  You don't have permission to decrypt this.   #
-                 #          Press ENTER to continue.             #
-                 #################################################
-                 """)
+        input("""
+#################################################
+#  You don't have permission to decrypt this.   #
+#          Press ENTER to continue.             #
+#################################################
+""")
     except Exception as e:
-        input("""#################################################
-                 #      An error occoured. Please Try Again.     #
-                 #          Press ENTER to continue.             #
-                 #################################################
-                 """)
+        input("""
+#################################################
+#      An error occoured. Please Try Again.     #
+#          Press ENTER to continue.             #
+#################################################
+""")
         
-def replace_key():
-    script_dir = os.path.dirname(os.path.abspath(__file__))
-    main_key_path = os.path.join(script_dir, 'main_key.txt') 
-
-    new_key = input("Enter new key: ")
-
-    with open(main_key_path, 'w') as file:
-        file.write(new_key)
-    print(f"Key has been replaced in {main_key_path}.")
-
-def load_keys():
+def fesys_load_keys():
     if os.path.exists("keys.json"):
         with open("keys.json", "r") as keys_file:
             return json.load(keys_file)
     return []
-
-def save_keys(keys):
-    with open("keys.json", "w") as keys_file:
-        json.dump(keys, keys_file)
 
 def ffe_help_info():
     input("""
@@ -146,10 +148,9 @@ def ffe_about():
 #################  - ABOUT -  ###################
 #                                               #
 #         FFE (Friend File Encryptor)           #
-#              Version 0.5.2 Beta               #
-#             Build: FFE1312025LYEE             #
-#                                               #
-#                                               #
+#              Version 0.6.0 Beta               #
+#             Build: FFE212025LYEE              #
+#                                               #                                               
 #            (c)2025 AVX_Advanced               #
 #       Do not copy this program without        #
 #      permission of the original creator.      #
@@ -160,9 +161,9 @@ def ffe_about():
 """)
 
 # If you're reading this, that means you actually took time to look through FFE's code. Nice! 
-# (Un)Stragically placed by AVX_Advanced 
+# (Un)Strategically placed by AVX_Advanced 
 
-def main_menu():
+def ffe_main_menu():
     clear_console()
     print("""
 ################ - HOME MENU - ##################
@@ -172,15 +173,16 @@ def main_menu():
 #  3. Key Update Guide                          #                                             
 #  4. Help & Support                            #
 #  5. About                                     #
+#  Q. Exit                                      #
 #                                               #
 #################################################
-#                   q. EXIT                     #
+#             Enter your selection:             #
 #################################################
 """)
-    choice = input("Enter your choice: ")
+    choice = input("")
     return choice
 
-def main():
+def fesys_main():
     clear_console()
 
     if not os.path.exists("main_key.key"):
@@ -202,7 +204,7 @@ def main():
 #                                               #
 #                                               #
 #################################################
-#          A new Key File was created.          #
+#         A new Key File will be created.       #
 #            Press ENTER to continue.           #
 #################################################
 """)
@@ -222,12 +224,12 @@ def main():
 """)
 
     main_key = fesys_load_key("main_key.key")
-    keys = load_keys()
+    keys = fesys_load_keys()
     keys = [main_key.decode()] + keys 
     cipher = Fernet(main_key)
 
     while True:
-        choice = main_menu()
+        choice = ffe_main_menu()
         if choice == "1":
             clear_console()
             file_to_encrypt = input("""
@@ -243,8 +245,7 @@ def main():
 #    encrypt or drag it here from explorer.     # 
 #################################################
 """)
-            encrypt_file(file_to_encrypt, cipher)
-            input("Press Enter to go back to the home menu...")
+            fesys_encrypt_file(file_to_encrypt, cipher)
             clear_console()
         elif choice == "2":
             clear_console()
@@ -262,10 +263,7 @@ def main():
 #    decrypt or drag it here from explorer.     # 
 #################################################
 """)
-            decrypt_file(file_to_decrypt, keys)
-            input("Press Enter to go back to the home menu...")
-        elif choice == "":
-            replace_key()
+            fesys_decrypt_file(file_to_decrypt, keys)
         elif choice == "4":
             clear_console()
             ffe_help_info()
@@ -291,9 +289,14 @@ def main():
             clear_console()
             sys.exit()
         else:
-            print("That choice ain't valid. Seems like you mistyped. Please retry.")
-            input("Press Enter to go back to the main menu...")
+            input("""
+            #################################################
+            #     That option isn't valid. Try Again.       #
+            #     Press ENTER to return to Home Menu.       # 
+            #################################################
+            """)
+            
 
 if __name__ == "__main__":
-    main()
+    fesys_main()
             
