@@ -27,7 +27,13 @@ WE STRONGLY RECOMMEND UPDATING FROM ANY UNSUPPORTED VERSION!
 | 0.5.1   | 🟢 Support Available.                                 |
 | 0.5.0   | 🟨 Partial Support Available.                         |
 
-## Reporting a Vulnerability
+## Reporting Bugs 
 
-If you find any kind of vulnerability, please open an issue and explain the issue. 
+If you happen to find bugs, please open an issue here on github. 
+Please attatch screenshots or screen recordings.
+Be specific.
+
 Thank You!
+
+Last Updated: January 2025
+Thank You for choosing FFE!
