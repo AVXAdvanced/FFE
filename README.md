@@ -16,9 +16,6 @@ Windows 7 (x64/x86) or higher
 Microsoft Visual C++ 2015 Redistributable (x64/x86) - 14.0.23026 or higher.
 70 MB Availible Hard Drive Space. (12 MB for FFE, 50 MB for either Redist File.)
 
-FFE features a basic malware detection feature (due to the vulnerabilities in Python) that informs you upon startup if suspicious programs are found running.
-Please report any known malware here in the GitHub (under issues preferrably) so I can make FFE safer for everyone.
-
 FFE is currently in Open Beta so please expect and report bugs/errors here in the GitHub so I can fix them.
 Remember, fixing bugs may take a while, but I will try my best! :)
 
