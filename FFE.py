@@ -2,6 +2,7 @@ from cryptography.fernet import Fernet
 import os
 import sys
 import json
+import requests
 
 def clear_console():
     os.system('cls' if os.name == 'nt' else 'clear')
@@ -17,15 +18,39 @@ input("""
 #        ##        ##        #######            #
 #                                               #
 #               Welcome to FFE!                 #
-#                Version 0.6.0                  #
+#                Version 1.0.0                  #
 #          github.com/AVXAdvanced/FFE           #
 #                                               #
 #             (c)2025 AVX_Advanced              #
+#             All Rights Reserved.              #
 #################################################
 #            Press ENTER to continue.           #
 #################################################
 """)
 clear_console()
+
+def fesys_err_backend():
+    print(f"Current Info couldn't be loaded. This appears to be an issue on our side.")
+
+def fesys_err_offline():
+    print("Current Info couldn't be loaded. You seem to be offline.")
+
+def fesys_txt_info (doc_id="13wX9-_44rq2-WzgpRfekaXaPu9l1i3kX5pAaSALqEeA"):
+    url = f"https://docs.google.com/document/d/13wX9-_44rq2-WzgpRfekaXaPu9l1i3kX5pAaSALqEeA/export?format=txt"
+    
+    try:
+        response = requests.get(url, timeout=5)  
+        response.raise_for_status()  
+        print(response.text.strip())  
+    
+    except requests.exceptions.ConnectionError:
+        fesys_err_offline()
+    
+    except requests.exceptions.HTTPError as e:
+        fesys_err_backend()
+
+    except requests.exceptions.RequestException as e:
+        fesys_err_backend()
 
 def fesys_gen_key():
     return Fernet.generate_key()
@@ -46,12 +71,14 @@ def fesys_encrypt_file(file_path, cipher):
         encrypted_data = cipher.encrypt(file_data)
         with open(encrypted_file_path, "wb") as encrypted_file:
             encrypted_file.write(encrypted_data)
+        clear_console()
         input("""
 #################################################
 #       Success! Press ENTER to continue.       #
 #################################################
 """)
     except Exception as e:
+        clear_console()
         input("""
 #################################################
 #      An error occoured. Please Try Again.     #
@@ -62,6 +89,7 @@ def fesys_encrypt_file(file_path, cipher):
 def fesys_decrypt_file(file_path, keys):
     try:
         if not file_path.endswith(".enc"):
+            clear_console()
             input("""
 #################################################
 #           That isn't a valid file.            #
@@ -89,7 +117,7 @@ def fesys_decrypt_file(file_path, keys):
                 return
             except Exception:
                 continue  
-
+        clear_console()
         input("""
 #################################################
 #  You don't have permission to decrypt this.   #
@@ -97,20 +125,26 @@ def fesys_decrypt_file(file_path, keys):
 #################################################
 """)
     except Exception as e:
+        clear_console()
         input("""
 #################################################
 #      An error occoured. Please Try Again.     #
 #          Press ENTER to continue.             #
 #################################################
 """)
-        
+      
+# C/O        
+
 def fesys_load_keys():
     if os.path.exists("keys.json"):
         with open("keys.json", "r") as keys_file:
             return json.load(keys_file)
     return []
 
+# C/O
+
 def ffe_help_info():
+    fesys_txt_info("")
     input("""
 ################  - SUPPORT -  ##################
 #                                               #
@@ -127,6 +161,7 @@ def ffe_help_info():
 """)
 
 def ffe_key_transfer_guide():
+    fesys_txt_info("")
     input("""
 ############  - KEY UPDATE GUIDE -  #############
 #                                               #
@@ -144,27 +179,56 @@ def ffe_key_transfer_guide():
 """)
 
 def ffe_about():
+    fesys_txt_info("")
     input("""
 #################  - ABOUT -  ###################
 #                                               #
 #         FFE (Friend File Encryptor)           #
-#              Version 0.6.0 Beta               #
-#             Build: FFE212025LYEE              #
+#                Version 1.0.0                  #
+#            Build: FFE03072025LYEE             #
 #                                               #                                               
 #            (c)2025 AVX_Advanced               #
-#       Do not copy this program without        #
-#      permission of the original creator.      #
+#            All Rights Reserved.               #
 #                                               #
 #################################################
 #     Press ENTER to return to home menu.       #
 #################################################
 """)
 
+def ffe_exit_msg():
+    input("""
+################### - EXIT - ####################
+#                                               #
+#          Thanks for using FFE today!          #
+#           FFE is now ready to exit.           #
+#                                               #
+#              Have a nice day!                 #                  
+#                                               #
+#################################################
+#             Press ENTER to exit.              #
+#################################################
+""")
+
+def ffe_invld_opt():
+    input("""
+################## - ERROR - ####################
+#                                               #
+#           That option is invalid.             #
+#                                               #
+#     Please select an option from the menu     #
+#                and try again.                 #                  
+#                                               #
+#################################################
+#      Press ENTER to return to home menu.      #
+#################################################
+""")    
+
 # If you're reading this, that means you actually took time to look through FFE's code. Nice! 
 # (Un)Strategically placed by AVX_Advanced 
 
 def ffe_main_menu():
     clear_console()
+    fesys_txt_info("")
     print("""
 ################ - HOME MENU - ##################
 #                                               #
@@ -176,7 +240,7 @@ def ffe_main_menu():
 #  Q. Exit                                      #
 #                                               #
 #################################################
-#             Enter your selection:             #
+#          Type your selection below:           #
 #################################################
 """)
     choice = input("")
@@ -186,22 +250,24 @@ def fesys_main():
     clear_console()
 
     if not os.path.exists("main_key.key"):
-        key = fesys_gen_key()
-        fesys_save_key(key, "main_key.key")
         input("""
 ################## - ERROR - ####################
 #              No Main Key Found!               #
 #################################################
 #                                               # 
-#        The main key file wasn't found         #
+#        The main key file wasn't found.        #
 #          This is normal if you just           #
 #                installed FFE.                 #
 #                                               #
-#   If you attempted to update your key file,   #
-#     and you're seeing this please consult:    #
+#       If you updated FFE, close it now.       #
+#       Go to 'C:/Program Files/FFE 0.8.0',     #
+#      and replace the 'main_key.key' file      #
+#              with the one from                #
+#        your previous FFE installation.        #
 #                                               #
-#     https://github.com/AVXAdvanced/FFE/       #
-#                                               #
+#            Go to the FFE Wiki on              #
+#        "github.com/AVXAdvanced/FFE"           #
+#             for more information.             #                           
 #                                               #
 #################################################
 #         A new Key File will be created.       #
@@ -209,15 +275,14 @@ def fesys_main():
 #################################################
 """)
         clear_console()
+        key = fesys_gen_key()
+        fesys_save_key(key, "main_key.key")
+        clear_console()
         input("""
 ################### - INFO - ####################
 #                                               #
 #      New Key File created successfully!       #
-#                                               #
-#      To use an external key file please       #
-#        select "Key File Update Guide"         #
-#              in the home menu.                #
-#                                               #
+#                                               #                                               
 #################################################                                               
 #          Press Enter to continue...           #
 #################################################
@@ -232,6 +297,7 @@ def fesys_main():
         choice = ffe_main_menu()
         if choice == "1":
             clear_console()
+            fesys_txt_info("")
             file_to_encrypt = input("""
 ################  - ENCRYPT - ###################
 #          Here you can encrypt files.          #
@@ -249,6 +315,7 @@ def fesys_main():
             clear_console()
         elif choice == "2":
             clear_console()
+            fesys_txt_info("")
             file_to_decrypt = input("""
 ################  - DECRYPT - ###################
 #          Here you can decrypt files.          #
@@ -275,27 +342,12 @@ def fesys_main():
             ffe_about()      
         elif choice == "q":
             clear_console()
-            input("""
-################### - EXIT - ####################
-#                                               #
-#         You have chosen to exit FFE.          #
-#                                               #
-#              Have a nice day!                 #                  
-#                                               #
-#################################################
-#             Press ENTER to exit.              #
-#################################################
-""")
+            ffe_exit_msg()
             clear_console()
             sys.exit()
         else:
-            input("""
-            #################################################
-            #     That option isn't valid. Try Again.       #
-            #     Press ENTER to return to Home Menu.       # 
-            #################################################
-            """)
-            
+            clear_console()
+            ffe_invld_opt()
 
 if __name__ == "__main__":
     fesys_main()
