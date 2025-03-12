@@ -21,11 +21,10 @@ If you need help with an unsupported version, ask other users or check old docum
 WE STRONGLY RECOMMEND UPDATING FROM ANY UNSUPPORTED VERSION!
 
 
- Version | Support Status                           
-| |------------------------------------------------
+| Version | Support Status                                         |
+| ------- | -------------------------------------------------------|
 | 1.0.0   | 🟢 Support Available.                                 |
-| 0.7.0   | 🟨 Partial Support Available.
-|                                 
+| 0.7.0   | 🟢 Support Available.                                 |  
 | 0.6.0   | 🟨 Partial Support Available.                         | 
 | 0.5.2   | 🟥 Unsupported.                                       |
 | 0.5.1   | 🟥 Unsupported.                                       |
