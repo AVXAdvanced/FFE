@@ -1,26 +1,24 @@
-# FFE (Friend File Encryptor)
+# FFE GUI Beta (LYNA)
 
-FFE is a new (and easier) way to share files with your friends (or really anyone who you want) without other people taking a peek.
+This is the FFE GUI Beta. A version of FFE that works exactly like the current production version, just with a GUI instead of a TUI.
+These builds of FFE are intended to replace the current production releases at a later date.
 
-Basically, you share your key file with all your friends, and then you can effortlessly share files between eachother without having to enter a password every time.
+These releases are planned to release under "Version 2.0.0" sometime between mid to late 2025.
+Please note that this plane can change drastically in the future due to delays, changes in planning, etc.
 
-FFE currently supports a single main key.
+These FFE builds will adopt the codename "LYNA" instead of "LYEE", which is found in the TUI builds of FFE.
 
-FFE is written in Python, and is fairly lightweight and meant to be accessible for everyone.
+TUI (Legacy) Builds of FFE will most likely remain availible after Version 2.0.0 (GUI) is released,
+and they might also still be maintained, at least keeping support for a while.
+This will depend on if users like the new GUI, and on how many people switch to it.
 
-The program currently supports Windows (x64/x86) only.
+These builds of FFE finally deprecate the remnants of FFE's long discontinued feature to store multiple keys,
+as it is built completely differently (almost from the ground up!).
 
-FFE requires the following:
+Once Version 2.0.0 releases, the GUI versions of FFE will move to the main branch, and the Legacy TUI versions will
+move to a seperate branch (such as this one is currently). 
 
-Windows 7 (x64/x86) or higher
-Microsoft Visual C++ 2015 Redistributable (x64/x86) - 14.0.23026 or higher.
-70 MB Availible Hard Drive Space. (12 MB for FFE, 50 MB for either Redist File.)
+Feel Free to try this version if you would like to, but note that this is in beta and may contain bugs and issues, that
+may or may not cause harm to your files and/or system (in the worst case).
 
-FFE is currently in Open Beta so please expect and report bugs/errors here in the GitHub so I can fix them.
-Remember, fixing bugs may take a while, but I will try my best! :)
-
-For anyone looking for the Key Transfer Guide, it is now located in the Wiki. 
-
-Thanks for considering FFE!
-
-<a href="https://www.producthunt.com/posts/ffe?embed=true&utm_source=badge-featured&utm_medium=badge&utm_souce=badge-ffe" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=939181&theme=light&t=1741449609010" alt="FFE - A&#0032;new&#0032;and&#0032;easy&#0032;way&#0032;to&#0032;encrypt&#0032;your&#0032;files&#0046;&#0046;&#0046; | Product Hunt" style="width: 250px; height: 54px;" width="250" height="54" /></a>
+Thank You to everyone trying this!
