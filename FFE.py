@@ -18,7 +18,7 @@ input("""
 #        ##        ##        #######            #
 #                                               #
 #               Welcome to FFE!                 #
-#                Version 1.0.0                  #
+#                Version 1.1.0                  #
 #          github.com/AVXAdvanced/FFE           #
 #                                               #
 #             (c)2025 AVX_Advanced              #
@@ -29,14 +29,14 @@ input("""
 """)
 clear_console()
 
-def fesys_err_backend():
+def fesys_inftxt_err_notavail():
     print(f"Current Info couldn't be loaded. This appears to be an issue on our side.")
 
-def fesys_err_offline():
+def fesys_inftxt_err_offline():
     print("Current Info couldn't be loaded. You seem to be offline.")
 
-def fesys_txt_info (doc_id="13wX9-_44rq2-WzgpRfekaXaPu9l1i3kX5pAaSALqEeA"):
-    url = f"https://docs.google.com/document/d/13wX9-_44rq2-WzgpRfekaXaPu9l1i3kX5pAaSALqEeA/export?format=txt"
+def fesys_txt_info (doc_id="1HLZpZMyH46xhs1-BDaMHL7eCETixNgXhYouMXFoqYHg"):
+    url = f"https://docs.google.com/document/d/1HLZpZMyH46xhs1-BDaMHL7eCETixNgXhYouMXFoqYHg/export?format=txt"
     
     try:
         response = requests.get(url, timeout=5)  
@@ -44,13 +44,13 @@ def fesys_txt_info (doc_id="13wX9-_44rq2-WzgpRfekaXaPu9l1i3kX5pAaSALqEeA"):
         print(response.text.strip())  
     
     except requests.exceptions.ConnectionError:
-        fesys_err_offline()
+        fesys_inftxt_err_offline()
     
     except requests.exceptions.HTTPError as e:
-        fesys_err_backend()
+        fesys_inftxt_err_notavail()
 
     except requests.exceptions.RequestException as e:
-        fesys_err_backend()
+        fesys_inftxt_err_notavail()
 
 def fesys_gen_key():
     return Fernet.generate_key()
@@ -73,16 +73,24 @@ def fesys_encrypt_file(file_path, cipher):
             encrypted_file.write(encrypted_data)
         clear_console()
         input("""
+################### - INFO - ####################
+#                                               #
+#         File Successfully Encrypted!          #
+#                                               #
 #################################################
-#       Success! Press ENTER to continue.       #
+#      Press ENTER to return to home menu.      #
 #################################################
 """)
     except Exception as e:
         clear_console()
         input("""
+################## - ERROR - ####################
+#                                               #
+#              An error occurred.               #
+#           Please Try Again Later.             #
+#                                               #                                               
 #################################################
-#      An error occoured. Please Try Again.     #
-#          Press ENTER to continue.             #
+#      Press ENTER to return to home menu.      #
 #################################################
 """)
 
@@ -91,9 +99,12 @@ def fesys_decrypt_file(file_path, keys):
         if not file_path.endswith(".enc"):
             clear_console()
             input("""
+################## - ERROR - ####################
+#                                               #
+#       Sorry, that's not a .enc file.          #
+#                                               #
 #################################################
-#           That isn't a valid file.            #
-#           Press ENTER to continue.            #
+#      Press ENTER to return to home menu.      #
 #################################################
 """)
             return
@@ -110,26 +121,38 @@ def fesys_decrypt_file(file_path, keys):
                     decrypted_file.write(decrypted_data)
                 key_str = key.decode() if isinstance(key, bytes) else key
                 input("""
+################### - INFO - ####################
+#                                               #
+#         File Successfully Decrypted!          #
+#                                               #
 #################################################
-#       Success! Press ENTER to continue.       #
+#      Press ENTER to return to home menu.      #
 #################################################
-                         """)
+""")
                 return
             except Exception:
                 continue  
         clear_console()
         input("""
+################## - ERROR - ####################
+#                                               #
+#        Sorry, you don't have permission       #
+#            to decrypt this file.              #
+#                                               #
 #################################################
-#  You don't have permission to decrypt this.   #
-#          Press ENTER to continue.             #
+#      Press ENTER to return to home menu.      #
 #################################################
 """)
     except Exception as e:
         clear_console()
         input("""
+################## - ERROR - ####################
+#                                               #
+#              An error occurred.               #
+#           Please Try Again Later.             #
+#                                               #                                               
 #################################################
-#      An error occoured. Please Try Again.     #
-#          Press ENTER to continue.             #
+#      Press ENTER to return to home menu.      #
 #################################################
 """)
       
@@ -184,8 +207,8 @@ def ffe_about():
 #################  - ABOUT -  ###################
 #                                               #
 #         FFE (Friend File Encryptor)           #
-#                Version 1.0.0                  #
-#            Build: FFE03072025LYEE             #
+#                Version 1.1.0                  #
+#           Build: FFE03142025LYEE              #
 #                                               #                                               
 #            (c)2025 AVX_Advanced               #
 #            All Rights Reserved.               #
@@ -232,12 +255,13 @@ def ffe_main_menu():
     print("""
 ################ - HOME MENU - ##################
 #                                               #
-#  1. Encrypt a File                            #
-#  2. Decrypt a File                            #
-#  3. Key Update Guide                          #                                             
-#  4. Help & Support                            #
-#  5. About                                     #
-#  Q. Exit                                      #
+#  [1] Encrypt a File                           #
+#  [2] Decrypt a File                           #
+#  [3] Key Update Guide                         #                                             
+#  [4] Help & Support                           #
+#  [5] About                                    #
+#                                               #
+#  [Q] Exit                                     #
 #                                               #
 #################################################
 #          Type your selection below:           #
@@ -300,6 +324,7 @@ def fesys_main():
             fesys_txt_info("")
             file_to_encrypt = input("""
 ################  - ENCRYPT - ###################
+#                                               #
 #          Here you can encrypt files.          #
 #          Any file type is supported.          #
 #                                               #
@@ -318,6 +343,7 @@ def fesys_main():
             fesys_txt_info("")
             file_to_decrypt = input("""
 ################  - DECRYPT - ###################
+#                                               #
 #          Here you can decrypt files.          #
 #       You can only decrypt ".enc" files.      #
 #                                               #
