@@ -23,8 +23,9 @@ WE STRONGLY RECOMMEND UPDATING FROM ANY UNSUPPORTED VERSION!
 
 | Version | Support Status                                         |
 | ------- | -------------------------------------------------------|
-| 1.0.0   | 🟢 Support Available.                                 |
-| 0.7.0   | 🟨 Partial Support Available.                         |  
+| 1.1.0   | 🟢 Support Available.                                 |
+| 1.0.0   | 🟨 Partial Support Available.                         |
+| 0.7.0   | 🟥 Unsupported.                                       |  
 | 0.6.0   | 🟥 Unsupported.                                       | 
 | 0.5.2   | 🟥 Unsupported.                                       |
 | 0.5.1   | 🟥 Unsupported.                                       |
