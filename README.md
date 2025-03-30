@@ -40,6 +40,9 @@ Only encrypt files not important to you using FFE Betas.
 
 LINK WILL BE ADDED LATER. PLACEHOLDER.
 
+<a href="https://github.com/yourusername/yourrepo" target="_blank">
+  <img src="https://img.shields.io/github/stars/yourusername/yourrepo?style=social" alt="Star on GitHub" />
+</a>
 
 
 Thanks for visiting the FFE GitHub!
