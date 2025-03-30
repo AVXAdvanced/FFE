@@ -36,16 +36,11 @@ You can try out Beta versions of FFE in the GitHub Repository listed below.
 Remember that FFE Betas are NOT finished, may not be fully functional, and may cause harm to your files.
 Only encrypt files not important to you using FFE Betas.
 
-
-
-LINK WILL BE ADDED LATER. PLACEHOLDER.
-
-<a href="https://github.com/yourusername/yourrepo" target="_blank">
+<a href="https://github.com/AVXAdvanced/FFE-Development" target="_blank">
   <img src="https://img.shields.io/github/stars/yourusername/yourrepo?style=social" alt="Star on GitHub" />
 </a>
 
 
 Thanks for visiting the FFE GitHub!
-
 
 <a href="https://www.producthunt.com/posts/ffe?embed=true&utm_source=badge-featured&utm_medium=badge&utm_souce=badge-ffe" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=939181&theme=light&t=1741449609010" alt="FFE - A&#0032;new&#0032;and&#0032;easy&#0032;way&#0032;to&#0032;encrypt&#0032;your&#0032;files&#0046;&#0046;&#0046; | Product Hunt" style="width: 250px; height: 54px;" width="250" height="54" /></a>
