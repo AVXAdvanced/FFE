@@ -36,9 +36,10 @@ You can try out Beta versions of FFE in the GitHub Repository listed below.
 Remember that FFE Betas are NOT finished, may not be fully functional, and may cause harm to your files.
 Only encrypt files not important to you using FFE Betas.
 
-<a href="https://github.com/yourusername/yourrepo" target="_blank">
-  <img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=your-repo-id&theme=light&t=1741449609010" alt="GitHub Repo" style="width: 250px; height: 54px;" width="250" height="54" />
+<a href="https://github.com/yourusername/yourrepo" target="_blank" style="display: inline-block; background-color: #24292f; color: #fff; font-size: 16px; font-weight: bold; text-align: center; padding: 15px 30px; border-radius: 8px; text-decoration: none; width: 300px;">
+  Visit us on GitHub
 </a>
+
 
 
 
