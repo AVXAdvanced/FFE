@@ -37,7 +37,7 @@ Remember that FFE Betas are NOT finished, may not be fully functional, and may c
 Only encrypt files not important to you using FFE Betas.
 
 <a href="https://github.com/yourusername/yourrepo" target="_blank" style="display: inline-block; background-color: #24292f; color: #fff; font-size: 16px; font-weight: bold; text-align: center; padding: 15px 30px; border-radius: 8px; text-decoration: none; width: 300px;">
-  Visit us on GitHub
+  See the betas...
 </a>
 
 
