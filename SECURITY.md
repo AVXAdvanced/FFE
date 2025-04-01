@@ -1,43 +1,59 @@
-# Security Policy
+# Supported Versions of FFE
 
-## Supported Versions
+Below is a list of FFE versions that you will get official support for.
+FFE Versions are usually marked "Unsupported" after a large change occurred, or they just got old.
 
-Below is the a list of all FFE Versions to be released, and what kind of support they will recieve. 
-Usually older versions get unsupported after a big change is made. If only small bug fixes happen, older versions may still recieve full support.
+Here's what the statuses mean:
 
-### Support Available
+## Supported
 
-This means that full support is guaranteed. We will try to answer any questions you may have.
+This means that this version of FFE will continue to recieve official support for some time
+to come. 
 
-### Partial Support Available
+**These versions of FFE are safe to use**
 
-This means that some questions you may have, such as how to navigate the UI, or how some functions work, will still be answered.
-However, help with lost files or damage to your system will be ignored.
+## CSO
 
-### Unsupported
+CSO stands for "Community Support Only", meaning this version of FFE, though recieving no official support,
+is still relatively safe to use, though we recommend updating soon.
 
-This means that no questions will be answered. 
-If you need help with an unsupported version, ask other users or check old documentation.
-WE STRONGLY RECOMMEND UPDATING FROM ANY UNSUPPORTED VERSION!
+CSO Versions of FFE may also include early betas, that are not in official support *yet*.
+
+**These versions of FFE are relatively safe to use**
+
+## Unsupported
+
+Unsupported Versions of FFE recieve no official support, are most likely outdated, and may have a different UI that may be hard
+to navigate through.
+
+We strongly recommend updating ASAP.
+
+Using an Unsupported Version of FFE is NOT SAFE.
+
+**These versions of FFE are NOT SAFE TO USE**
+
+
+## Support Table
+
+Below is a chart of which version of FFE
+fall into which category.
+
+Refer to it to find out if you should
+upgrade soon.
 
 
 | Version | Support Status                                         |
 | ------- | -------------------------------------------------------|
-| 1.1.0   | 🟢 Support Available.                                 |
-| 1.0.0   | 🟨 Partial Support Available.                         |
+| 1.1.2   | ✅ Supported                                          |
+| 1.1.1   | 🟨 CSO                                                |
+| 1.1.0   | 🟨 CSO                                                |
+| 1.0.0   | 🟨 CSO                                                |
 | 0.7.0   | 🟥 Unsupported.                                       |  
 | 0.6.0   | 🟥 Unsupported.                                       | 
 | 0.5.2   | 🟥 Unsupported.                                       |
 | 0.5.1   | 🟥 Unsupported.                                       |
 | 0.5.0   | 🟥 Unsupported.                                       |
 
-## Reporting Bugs 
 
-If you happen to find bugs, please open an issue here on github. 
-Please attatch screenshots or screen recordings.
-Be specific.
-
-Thank You!
-
-Last Updated: March 14th 2025 (MST)
+Last Updated: March 31st 2025 (MST)
 Thank You for choosing FFE!
