@@ -18,7 +18,7 @@ input("""
 #        ##        ##        #######            #
 #                                               #
 #               Welcome to FFE!                 #
-#                Version 1.1.2                  #
+#                Version 1.1.3                  #
 #          github.com/AVXAdvanced/FFE           #
 #                                               #
 #             (c)2025 AVX_Advanced              #
@@ -238,8 +238,8 @@ def ffe_about():
 #################  - ABOUT -  ###################
 #                                               #
 #         FFE (Friend File Encryptor)           #
-#                Version 1.1.2                  #
-#           Build: FFE03292025LYEE              #
+#                Version 1.1.3                  #
+#           Build: FFE04012025LYEE              #
 #                                               #                                               
 #            (c)2025 AVX_Advanced               #
 #            All Rights Reserved.               #
