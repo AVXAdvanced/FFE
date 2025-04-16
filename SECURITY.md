@@ -47,14 +47,16 @@ upgrade soon.
 | 1.1.3   | ✅ Supported                                          |
 | 1.1.2   | 🟨 CSO                                                |
 | 1.1.1   | 🟨 CSO                                                |
-| 1.1.0   | 🟨 CSO                                                |
-| 1.0.0   | 🟥 Unsupported.                                       |
-| 0.7.0   | 🟥 Unsupported.                                       |  
-| 0.6.0   | 🟥 Unsupported.                                       | 
-| 0.5.2   | 🟥 Unsupported.                                       |
-| 0.5.1   | 🟥 Unsupported.                                       |
-| 0.5.0   | 🟥 Unsupported.                                       |
+| 1.1.0   | 🟥 Unsupported                                        |
+| 1.0.0   | 🟥 Unsupported                                        |
+| 0.7.0   | 🟥 Unsupported                                        |  
+| 0.6.0   | 🟥 Unsupported                                        | 
+| 0.5.2   | 🟥 Unsupported                                        |
+| 0.5.1   | 🟥 Unsupported                                        |
+| 0.5.0   | 🟥 Unsupported                                        |
 
 
-Last Updated: March 31st 2025 (MST)
-Thank You for choosing FFE!
+Last Updated: April 15th 2025 (MST)
+
+Remember to check for updates regularly...
+Thanks for using FFE!
