@@ -10,14 +10,15 @@ FFE completely eliminates the need for you to enter a password everytime you wan
 Thanks to a user-friendly interface, FFE can be used by anyone, on almost any computer!
 FFE uses Python, a lightweight programming language, to achieve a fast and effiencient user experience.
 
-## System Requirements
+## Requirements
 
 A computer with the following is required to properly run FFE:
 
-Microsoft Windows 7 (x86/x64)
-Microsoft Visual C++ 2015 Redistributable (x86/x64) - 14.0.23026
-1 GB RAM (x86), 2 GB RAM (x64)
-60 MB of free disk space
+- Microsoft Windows 7 (x86/x64)
+- Microsoft Visual C++ 2015 Redistributable (x86/x64) - 14.0.23026
+- 1 GB RAM (x86), 2 GB RAM (x64)
+- 60 MB of free disk space
+
 
 ## Disclaimers & Warnings
 
