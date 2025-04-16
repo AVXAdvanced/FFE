@@ -1,5 +1,7 @@
 # FFE (Friend File Encryptor)
 
+![Cat](https://drive.google.com/file/d/1CJqoZkkwSIQQNl4icdCHtn1394KytMMK/view?usp=sharing)
+
 ## Introduction
 
 FFE is an intuitive way to encrypt and share files in a friend group. 
