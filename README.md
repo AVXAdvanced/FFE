@@ -4,11 +4,11 @@
 
 ## Introduction
 
-FFE is an intuitive way to encrypt and share files in a friend group. 
-FFE completely eliminates the need for you to enter a password everytime you want to en- or decrypt a file, making it way easier and faster to encrypt files.
+FFE is a simple yet powerful tool designed to make file encryption and sharing effortless—especially within a friend group or small community. With FFE, you don’t have to deal with the hassle of typing in a password every single time you want to encrypt or decrypt a file. Instead, it uses a secure key-based system that keeps things fast, smooth, and way more convenient.
 
-Thanks to a user-friendly interface, FFE can be used by anyone, on almost any computer!
-FFE uses Python, a lightweight programming language, to achieve a fast and effiencient user experience.
+One of the best parts? FFE’s clean, user-friendly interface makes it accessible to everyone—even those who aren’t super tech-savvy. Whether you're on an older PC or a more modern setup, FFE is built to work seamlessly on most computers.
+
+Under the hood, FFE is powered by Python—a lightweight yet capable programming language. This allows it to deliver a responsive and efficient experience without eating up your system's resources. Whether you're sharing files for fun or for work, FFE keeps things secure, simple, and lightning fast.
 
 ## Requirements
 
