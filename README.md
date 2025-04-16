@@ -38,7 +38,7 @@ You can try out Beta versions of FFE in the GitHub Repository listed below.
 Remember that FFE Betas are NOT finished, may not be fully functional, and may cause harm to your files.
 Only encrypt files not important to you using FFE Betas.
 
-<a href="https://github.com/yourusername/yourrepo" target="_blank" style="display: inline-block; background-color: #24292f; color: #fff; font-size: 16px; font-weight: bold; text-align: center; padding: 15px 30px; border-radius: 8px; text-decoration: none; width: 300px;">
+<a href="https://[github.com/AVXAdvanced/FFE-Development]" target="_blank" style="display: inline-block; background-color: #24292f; color: #fff; font-size: 16px; font-weight: bold; text-align: center; padding: 15px 30px; border-radius: 8px; text-decoration: none; width: 300px;">
   See the betas...
 </a>
 
