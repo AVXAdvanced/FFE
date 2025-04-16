@@ -22,22 +22,24 @@ A computer with the following is required to properly run FFE:
 
 ## Disclaimers & Warnings
 
-FFE is NOT an Enterprise Grade Security Program, and is only to be used for personal purposes. 
-Don't use FFE if you don't have explicit permission to do so, such as on other people's files.
-We CANNOT assist in recovering encrypted files, even if done by mistake. 
+Important Notice: FFE is not designed for enterprise-level security and should only be used for personal, non-commercial purposes. You must have explicit permission to use FFE on any files or systems that are not your own. Misuse—such as encrypting files without consent—can lead to serious consequences, and we take no responsibility for such actions.
 
-FFE is provided with NO warrenty, and anything you do is at your own risk.
+Please be aware that we cannot assist in recovering encrypted files, even if the encryption was accidental. Use the software responsibly and make backups if necessary.
 
-Don't use FFE on Public, School, and/or Work computers, especially if they aren't your property and/or contain sensitive data.
+FFE is provided as-is, with no warranty of any kind. By using FFE, you acknowledge that you do so entirely at your own risk. Any data loss, corruption, or unintended consequences are your responsibility.
 
-Remember: FFE is a project run by a single person, not a company. 
-Support & Help is not guaranteed. 
+Do not use FFE on public, school, or workplace computers, especially those that you do not own or that may contain sensitive information. Unauthorized use on such systems may violate policies or laws.
+
+Lastly, remember that FFE is a personal project developed and maintained by a single individual, not a company or professional organization. While feedback is welcome, support and assistance are not guaranteed.
 
 ## Betas & Development
 
-You can try out Beta versions of FFE in the GitHub Repository listed below.
-Remember that FFE Betas are NOT finished, may not be fully functional, and may cause harm to your files.
-Only encrypt files not important to you using FFE Betas.
+You can try out beta versions of FFE through the GitHub repository linked below.
+Please note that these beta builds are experimental and may contain bugs, incomplete features, or stability issues. They are not guaranteed to function correctly and could potentially harm your files.
+
+We strongly recommend only testing FFE Betas with non-important, throwaway files. Do not use them for anything sensitive or valuable.
+
+Here's a link to the FFE-Development GitHub Repository:
 
 www.github.com/AVXAdvanced/FFE-Development
 
