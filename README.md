@@ -1,6 +1,6 @@
 # FFE (Friend File Encryptor)
 
-![FFE GitHub Readme Banner](https://drive.google.com/file/d/1CJqoZkkwSIQQNl4icdCHtn1394KytMMK/view?usp=sharing)
+![My Image](https://drive.google.com/uc?export=view&id=1CJqoZkkwSIQQNl4icdCHtn1394KytMMK)
 
 ## Introduction
 
