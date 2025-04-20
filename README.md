@@ -1,6 +1,6 @@
 # FFE - Friend File Encryptor
 
-![FFE_GH_README_BANNER_LARGE](https://drive.google.com/uc?export=view&id=1rSWo2_7guMet-WmwjDGXVA-RsF4WAhXn)
+![ffe_gh_banner_v2_large](https://drive.google.com/uc?export=view&id=1rSWo2_7guMet-WmwjDGXVA-RsF4WAhXn)
 
 ## Introduction
 
@@ -12,12 +12,12 @@ Under the hood, FFE is powered by Python—a lightweight yet capable programming
 
 ## Requirements
 
-A computer with the following is required to properly run FFE:
+You'll need a computer with the following items to properly run FFE:
 
 - Microsoft Windows 7 (x86/x64)
 - Microsoft Visual C++ 2015 Redistributable (x86/x64) - 14.0.23026
 - 1 GB RAM (x86), 2 GB RAM (x64)
-- 60 MB of free disk space
+- 55 MB of free disk space
 
 
 ## Disclaimers & Warnings
