@@ -1,4 +1,4 @@
-# FFE - Friend File Encryptor
+# Friend File Encryptor (FFE)
 
 ![ffe_gh_banner_v2_large](https://drive.google.com/uc?export=view&id=1rSWo2_7guMet-WmwjDGXVA-RsF4WAhXn)
 
