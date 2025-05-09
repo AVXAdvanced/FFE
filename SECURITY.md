@@ -58,7 +58,7 @@ upgrade soon.
 | 0.5.0   | 🟥 Unsupported                                        |
 
 
-Last Updated: April 15th 2025 (MST)
+Last Updated: May 8th 2025 (MST)
 
 Remember to check for updates regularly...
 Thanks for using FFE!
