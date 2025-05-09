@@ -44,9 +44,11 @@ upgrade soon.
 
 | Version | Support Status                                         |
 | ------- | -------------------------------------------------------|
-| 1.1.3   | ✅ Supported                                          |
-| 1.1.2   | 🟨 CSO                                                |
-| 1.1.1   | 🟨 CSO                                                |
+| 2.0.1   | 🟩 Supported                                          |
+| 2.0.0   | 🟩 Supported                                          |
+| 1.1.3   | 🟨 CSO                                                 |
+| 1.1.2   | 🟥 Unsupported                                         |
+| 1.1.1   | 🟥 Unsupported                                        |
 | 1.1.0   | 🟥 Unsupported                                        |
 | 1.0.0   | 🟥 Unsupported                                        |
 | 0.7.0   | 🟥 Unsupported                                        |  
