@@ -1,6 +1,6 @@
 # Friend File Encryptor (FFE)
 
-[![stars](https://img.shields.io/github/stars/MatheusTT/wallpapers?color=7E9CD8&style=for-the-badge)](https://github.com/MatheusTT/wallpapers/stargazers)
+[![stars](https://img.shields.io/github/stars/AVXAdvanced/FFE?color=7E9CD8&style=for-the-badge)](https://github.com/MatheusTT/wallpapers/stargazers)
 [![issues](https://img.shields.io/github/issues/MatheusTT/wallpapers?color=FF5D62&style=for-the-badge)](https://github.com/MatheusTT/wallpapers/issues)
 [![size](https://img.shields.io/github/repo-size/MatheusTT/wallpapers?color=76946A&style=for-the-badge)](https://github.com/MatheusTT/wallpapers)
 
