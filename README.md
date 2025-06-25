@@ -1,3 +1,6 @@
+> ⚠️ FFE's update schedule will be delayed due to some personal issues.
+> I apologize for these delays.
+
 # Friend File Encryptor (FFE)
 
 [![stars](https://img.shields.io/github/stars/AVXAdvanced/FFE?color=7E9CD8&style=for-the-badge)](https://github.com/AVXAdvanced/FFE/stargazers)
