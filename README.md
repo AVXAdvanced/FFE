@@ -1,5 +1,3 @@
-> FFE is currently experiencing a delay in updates. Rest assured we are currently working on it, and will push new updates very soon! Thank You for your prolonged patience during this time!
-
 # Friend File Encryptor (FFE)
 
 [![stars](https://img.shields.io/github/stars/AVXAdvanced/FFE?color=7E9CD8&style=for-the-badge)](https://github.com/AVXAdvanced/FFE/stargazers)
