@@ -1,5 +1,9 @@
 # Friend File Encryptor (FFE)
 
+
+> ⚠️ **Caution** Please disregard the Security Policy page. It is outdated and yet to be updated.
+
+
 [![stars](https://img.shields.io/github/stars/AVXAdvanced/FFE?color=7E9CD8&style=for-the-badge)](https://github.com/AVXAdvanced/FFE/stargazers)
 [![issues](https://img.shields.io/github/issues/AVXAdvanced/FFE?color=FF5D62&style=for-the-badge)](https://github.com/AVXAdvanced/FFE/issues)
 [![size](https://img.shields.io/github/repo-size/AVXAdvanced/FFE?color=76946A&style=for-the-badge)](https://github.com/AVXAdvanced/FFE)
