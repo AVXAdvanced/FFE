@@ -1,4 +1,4 @@
-> ⚠️ FFE's update schedule will be delayed due to some personal issues.
+> FFE is currently experiencing a delay in updates. Rest assured we are currently working on it, and will push new updates very soon! Thank You for your prolonged patience during this time!
 
 # Friend File Encryptor (FFE)
 
@@ -7,8 +7,6 @@
 [![size](https://img.shields.io/github/repo-size/AVXAdvanced/FFE?color=76946A&style=for-the-badge)](https://github.com/AVXAdvanced/FFE)
 
 ![ffe_gh_banner_v2_large](https://drive.google.com/uc?export=view&id=1rSWo2_7guMet-WmwjDGXVA-RsF4WAhXn)
-
-> ⚠️ **Caution** This Repository's Information may be out of date, and will be updated soon. Thank You for your patience.
 
 ## Introduction
 
