@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FFE 3.0.0 - Friend File Encryptor</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Load Lucide Icons for superior design -->
+    <script type="module" src="https://unpkg.com/lucide@latest"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <style>
+        /* Custom Tailwind Configuration (Setting the FFE 3.0.0 Dark Purple Theme) */
+        :root {
+            --color-primary: #8B5CF6; /* Violet-500 */
+            --color-accent: #10B981; /* Emerald-500 */
+            --color-dark-bg: #111827; /* Gray-900 */
+            --color-card-bg: #1F2937; /* Gray-800 */
+            --color-text-light: #F9FAFB;
+        }
+
+        /* Set Inter as default font */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--color-dark-bg);
+            color: var(--color-text-light);
+            scroll-behavior: smooth;
+        }
+
+        /* Custom animation for the hero text */
+        @keyframes fadeInDown {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .animate-fade-in-down {
+            animation: fadeInDown 0.8s ease-out;
+        }
+
+        /* Custom code block style to mimic FFE's secure terminal look */
+        .code-block {
+            background-color: #0F172A; /* Slate-900 */
+            border-left: 4px solid var(--color-primary);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.2), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+
+        /* Scrollbar styling for a cleaner look */
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: var(--color-dark-bg); }
+        ::-webkit-scrollbar-thumb { background: #374151; /* Gray-700 */ border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: #4B5563; /* Gray-600 */ }
+    </style>
+</head>
+
+<body class="antialiased min-h-screen">
+
+    <!-- Header / Navigation -->
+    <header class="bg-gray-900 border-b border-gray-800 sticky top-0 z-50 shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+            <h1 class="text-2xl font-black tracking-wider text-violet-500">FFE <span class="text-gray-300 text-sm">3.0.0</span></h1>
+            <nav class="space-x-4">
+                <a href="#features" class="text-gray-300 hover:text-violet-400 transition duration-300 text-sm sm:text-base">Features</a>
+                <a href="#security" class="text-gray-300 hover:text-violet-400 transition duration-300 text-sm sm:text-base">Security</a>
+                <a href="#download" class="text-gray-300 hover:text-violet-400 transition duration-300 text-sm sm:text-base">Download</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <main class="py-16 md:py-24">
+        <section id="hero" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <p class="text-violet-400 font-semibold mb-3 tracking-wider animate-fade-in-down">LYRA-POWERED ENCRYPTION SUITE</p>
+            <h2 class="text-4xl sm:text-6xl md:text-7xl font-extrabold mb-6 text-gray-50 animate-fade-in-down delay-200">
+                Superior Security.<br class="sm:hidden">
+                Simplified.
+            </h2>
+            <p class="text-gray-400 max-w-2xl mx-auto text-lg mb-10 animate-fade-in-down delay-300">
+                FFE 3.0.0 is the complete solution for file privacy. Leveraging military-grade authenticated encryption, it gives you the flexibility to secure your data with a **Password or a Key File**.
+            </p>
+
+            <!-- Download Button -->
+            <div id="download" class="flex justify-center space-x-4 animate-fade-in-down delay-400">
+                <a href="YOUR_DOWNLOAD_LINK_HERE" 
+                   class="inline-flex items-center px-8 py-3 border border-transparent text-lg font-medium rounded-xl shadow-2xl text-white bg-violet-600 hover:bg-violet-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-violet-500 transition duration-300 transform hover:scale-[1.03]">
+                    <i data-lucide="download" class="w-5 h-5 mr-3"></i>
+                    Download FFE 3.0.0
+                </a>
+                <a href="https://github.com/AVXAdvanced/FFE" target="_blank"
+                   class="inline-flex items-center px-6 py-3 border-2 border-gray-700 text-lg font-medium rounded-xl text-gray-300 bg-gray-800 hover:border-violet-500 hover:text-violet-400 focus:outline-none transition duration-300">
+                    <i data-lucide="github" class="w-5 h-5 mr-3"></i>
+                    View Source
+                </a>
+            </div>
+            
+            <!-- Logo Placeholder/Screenshot Section -->
+            <div class="mt-16 relative">
+                <!-- Replace this with a nice GIF or screenshot of the new FFE 3.0.0 UI -->
+                <img src="https://placehold.co/1200x600/1F2937/F9FAFB?text=FFE+3.0.0+UI+PREVIEW+HERE" alt="FFE 3.0.0 User Interface Screenshot" 
+                     class="rounded-2xl mx-auto shadow-2xl shadow-violet-800/20 border border-gray-700 max-w-full h-auto">
+                <div class="absolute inset-0 bg-gradient-to-t from-gray-900 via-transparent to-transparent"></div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Features Section -->
+    <section id="features" class="py-16 md:py-24 bg-gray-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h3 class="text-3xl font-bold text-center mb-12 text-gray-50">FFE 3.0.0: The Key Features</h3>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <!-- Feature 1: Password Lock -->
+                <div class="bg-gray-800 p-8 rounded-2xl shadow-xl border border-gray-700 transform hover:scale-[1.02] transition duration-300">
+                    <div class="p-3 bg-violet-600 rounded-lg inline-block mb-4">
+                        <i data-lucide="lock" class="w-6 h-6 text-white"></i>
+                    </div>
+                    <h4 class="text-xl font-semibold mb-3 text-gray-50">Flexible Authentication</h4>
+                    <p class="text-gray-400">Lock files with the traditional secure Key File *OR* use a memorable Password. FFE converts your password using a robust key derivation function for max security and convenience.</p>
+                </div>
+
+                <!-- Feature 2: Themes -->
+                <div class="bg-gray-800 p-8 rounded-2xl shadow-xl border border-gray-700 transform hover:scale-[1.02] transition duration-300">
+                    <div class="p-3 bg-violet-600 rounded-lg inline-block mb-4">
+                        <i data-lucide="palette" class="w-6 h-6 text-white"></i>
+                    </div>
+                    <h4 class="text-xl font-semibold mb-3 text-gray-50">Customizable Themes</h4>
+                    <p class="text-gray-400">Match your system aesthetic with a new Theme Engine. Choose between the default **Dark Purple** or explore other options like the **Classic Grey** and more. Finally, an encryption tool that looks good.</p>
+                </div>
+                
+                <!-- Feature 3: Envelope Encryption -->
+                <div class="bg-gray-800 p-8 rounded-2xl shadow-xl border border-gray-700 transform hover:scale-[1.02] transition duration-300">
+                    <div class="p-3 bg-violet-600 rounded-lg inline-block mb-4">
+                        <i data-lucide="scan" class="w-6 h-6 text-white"></i>
+                    </div>
+                    <h4 class="text-xl font-semibold mb-3 text-gray-50">Authenticated Encryption</h4>
+                    <p class="text-gray-400">Leverages superior **Envelope Encryption**. Each file gets a unique key, which is then secured by your master key. No weak shared secrets, just pure cryptographic integrity.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Security Focus Section -->
+    <section id="security" class="py-16 md:py-24">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="md:grid md:grid-cols-2 md:gap-12 items-center">
+                
+                <!-- Security Text Block -->
+                <div>
+                    <span class="text-violet-500 font-semibold mb-2 block uppercase tracking-wider">Beyond the Lock</span>
+                    <h3 class="text-4xl font-extrabold mb-6 text-gray-50">Engineered for Integrity.</h3>
+                    <p class="text-gray-400 text-lg mb-6">
+                        FFE wasn't just built to work—it was built to be secure from the ground up, thanks to the lessons learned from the Aetherion project's intensive crypto-testing.
+                    </p>
+                    
+                    <ul class="space-y-4">
+                        <li class="flex items-start">
+                            <i data-lucide="check-circle" class="w-6 h-6 text-emerald-500 mr-3 mt-1 flex-shrink-0"></i>
+                            <span class="text-gray-300">**Fernet Standard:** Utilizes the industry-recommended Fernet spec (AES-128 GCM) for confidentiality and integrity checking.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i data-lucide="check-circle" class="w-6 h-6 text-emerald-500 mr-3 mt-1 flex-shrink-0"></i>
+                            <span class="text-gray-300">**No Static IVs/Salts:** Learns from common cryptographic pitfalls, using unique random elements for every encryption session.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i data-lucide="check-circle" class="w-6 h-6 text-emerald-500 mr-3 mt-1 flex-shrink-0"></i>
+                            <span class="text-gray-300">**ASVM Philosophy:** The Advanced System Verification Module philosophy ensures the application environment is constantly checked for integrity.</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Terminal Mockup -->
+                <div class="mt-10 md:mt-0 code-block rounded-2xl p-6">
+                    <div class="flex space-x-2 mb-4">
+                        <div class="w-3 h-3 bg-red-500 rounded-full"></div>
+                        <div class="w-3 h-3 bg-yellow-500 rounded-full"></div>
+                        <div class="w-3 h-3 bg-green-500 rounded-full"></div>
+                    </div>
+                    <pre class="text-green-300 text-sm overflow-x-auto whitespace-pre-wrap">
+<span class="text-violet-400">$</span> FFE_SYS: Starting ASVM scan...
+<span class="text-gray-400">>>></span> Checking Key File Integrity... <span class="text-emerald-500">[OK]</span>
+<span class="text-gray-400">>>></span> Verifying Process Authenticity... <span class="text-emerald-500">[OK]</span>
+<span class="text-violet-400">$</span> ASVM: System is fully verified.
+
+<span class="text-violet-400">$</span> FFE_CMD: encrypt_file documents/plan.txt --auth=password
+<span class="text-gray-400">>>></span> Deriving key using PBKDF2...
+<span class="text-gray-400">>>></span> Envelope encryption started...
+<span class="text-emerald-500">SUCCESS:</span> File 'plan.txt' secured as 'plan.txt.enc'
+                    </pre>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Footer -->
+    <footer class="mt-16 py-12 bg-gray-900 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h4 class="text-2xl font-bold mb-4 text-gray-50">Ready to secure your files?</h4>
+            <p class="text-gray-400 mb-6">
+                Download the latest stable version (3.0.0) and ditch the depressing view count.
+            </p>
+            <a href="YOUR_DOWNLOAD_LINK_HERE" 
+               class="inline-flex items-center px-8 py-3 border border-transparent text-lg font-medium rounded-xl shadow-2xl text-white bg-violet-600 hover:bg-violet-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-violet-500 transition duration-300 transform hover:scale-[1.03]">
+                <i data-lucide="download" class="w-5 h-5 mr-3"></i>
+                Download FFE 3.0.0 Now
+            </a>
+            <p class="text-sm text-gray-600 mt-8">
+                (c) 2025 Lyra Development. Built by AVX_Advanced.
+            </p>
+        </div>
+    </footer>
+
+    <!-- Initialize Lucide Icons -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // Replaces all <i> elements with Lucide icons (must be imported in head)
+            lucide.createIcons();
+        });
+    </script>
+</body>
+</html>
