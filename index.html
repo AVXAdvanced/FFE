@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FFE 3.0.0 - Friend File Encryptor</title>
+    <title>FFE - Friend File Encryptor</title>
     <!-- Load Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Load Lucide Icons for superior design -->
@@ -56,11 +56,19 @@
     <!-- Header / Navigation -->
     <header class="bg-gray-900 border-b border-gray-800 sticky top-0 z-50 shadow-lg">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
-            <h1 class="text-2xl font-black tracking-wider text-violet-500">FFE <span class="text-gray-300 text-sm">3.0.0</span></h1>
-            <nav class="space-x-4">
+            <a href="#hero" class="text-2xl font-black tracking-wider text-violet-500 hover:text-violet-400 transition duration-300 cursor-pointer">FFE</a>
+            <nav class="flex items-center space-x-6">
                 <a href="#features" class="text-gray-300 hover:text-violet-400 transition duration-300 text-sm sm:text-base">Features</a>
                 <a href="#security" class="text-gray-300 hover:text-violet-400 transition duration-300 text-sm sm:text-base">Security</a>
-                <a href="#download" class="text-gray-300 hover:text-violet-400 transition duration-300 text-sm sm:text-base">Download</a>
+                
+                <!-- New Header Download Button -->
+                <a href="#download-page" 
+                   class="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-lg text-white bg-violet-600 
+                          hover:bg-violet-700 focus:outline-none focus:ring-2 focus:ring-violet-500 
+                          transition duration-300 transform hover:scale-[1.03] shadow-md shadow-violet-500/30">
+                    <i data-lucide="download" class="w-4 h-4 mr-2"></i>
+                    Get FFE Now
+                </a>
             </nav>
         </div>
     </header>
@@ -68,43 +76,36 @@
     <!-- Hero Section -->
     <main class="py-16 md:py-24">
         <section id="hero" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <p class="text-violet-400 font-semibold mb-3 tracking-wider animate-fade-in-down">LYRA-POWERED ENCRYPTION SUITE</p>
+            <p class="text-violet-400 font-semibold mb-3 tracking-wider animate-fade-in-down">THE NEXT GENERATION OF FILE ENCRYPTION</p>
             <h2 class="text-4xl sm:text-6xl md:text-7xl font-extrabold mb-6 text-gray-50 animate-fade-in-down delay-200">
                 Superior Security.<br class="sm:hidden">
                 Simplified.
             </h2>
             <p class="text-gray-400 max-w-2xl mx-auto text-lg mb-10 animate-fade-in-down delay-300">
-                FFE 3.0.0 is the complete solution for file privacy. Leveraging military-grade authenticated encryption, it gives you the flexibility to secure your data with a **Password or a Key File**.
+                FFE is the complete solution for file privacy. Leveraging military-grade authenticated encryption, it gives you the flexibility to secure your data with a Password or a Key File to make sharing files a breeze.
             </p>
 
-            <!-- Download Button -->
-            <div id="download" class="flex justify-center space-x-4 animate-fade-in-down delay-400">
-                <a href="YOUR_DOWNLOAD_LINK_HERE" 
-                   class="inline-flex items-center px-8 py-3 border border-transparent text-lg font-medium rounded-xl shadow-2xl text-white bg-violet-600 hover:bg-violet-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-violet-500 transition duration-300 transform hover:scale-[1.03]">
-                    <i data-lucide="download" class="w-5 h-5 mr-3"></i>
-                    Download FFE 3.0.0
-                </a>
-                <a href="https://github.com/AVXAdvanced/FFE" target="_blank"
-                   class="inline-flex items-center px-6 py-3 border-2 border-gray-700 text-lg font-medium rounded-xl text-gray-300 bg-gray-800 hover:border-violet-500 hover:text-violet-400 focus:outline-none transition duration-300">
-                    <i data-lucide="github" class="w-5 h-5 mr-3"></i>
-                    View Source
+            <!-- Big Glowing Download Button (New CTA, links to new section) -->
+            <div class="flex justify-center mb-16 animate-fade-in-down delay-400">
+                <a href="#download-page" id="download-cta"
+                   class="inline-flex items-center px-10 py-4 border border-transparent text-xl font-bold rounded-xl shadow-2xl text-white bg-violet-600 
+                          hover:bg-violet-700 focus:outline-none focus:ring-4 focus:ring-violet-500 focus:ring-offset-2 focus:ring-offset-gray-900 
+                          transition duration-500 transform hover:scale-[1.05] shadow-violet-500/50 
+                          relative overflow-hidden group">
+                    <i data-lucide="zap" class="w-6 h-6 mr-3 transition-transform group-hover:rotate-12"></i>
+                    Get FFE Now
                 </a>
             </div>
             
-            <!-- Logo Placeholder/Screenshot Section -->
-            <div class="mt-16 relative">
-                <!-- Replace this with a nice GIF or screenshot of the new FFE 3.0.0 UI -->
-                <img src="https://placehold.co/1200x600/1F2937/F9FAFB?text=FFE+3.0.0+UI+PREVIEW+HERE" alt="FFE 3.0.0 User Interface Screenshot" 
-                     class="rounded-2xl mx-auto shadow-2xl shadow-violet-800/20 border border-gray-700 max-w-full h-auto">
-                <div class="absolute inset-0 bg-gradient-to-t from-gray-900 via-transparent to-transparent"></div>
-            </div>
+            <!-- Removed the static image mockup completely -->
+            
         </section>
     </main>
 
     <!-- Features Section -->
     <section id="features" class="py-16 md:py-24 bg-gray-900">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h3 class="text-3xl font-bold text-center mb-12 text-gray-50">FFE 3.0.0: The Key Features</h3>
+            <h3 class="text-3xl font-bold text-center mb-12 text-gray-50">FFE: The Key Features</h3>
             
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 
@@ -114,7 +115,7 @@
                         <i data-lucide="lock" class="w-6 h-6 text-white"></i>
                     </div>
                     <h4 class="text-xl font-semibold mb-3 text-gray-50">Flexible Authentication</h4>
-                    <p class="text-gray-400">Lock files with the traditional secure Key File *OR* use a memorable Password. FFE converts your password using a robust key derivation function for max security and convenience.</p>
+                    <p class="text-gray-400">Lock files with the traditional secure Key File or use a memorable Password. FFE converts your password using a robust key derivation function for max security and convenience.</p>
                 </div>
 
                 <!-- Feature 2: Themes -->
@@ -123,7 +124,7 @@
                         <i data-lucide="palette" class="w-6 h-6 text-white"></i>
                     </div>
                     <h4 class="text-xl font-semibold mb-3 text-gray-50">Customizable Themes</h4>
-                    <p class="text-gray-400">Match your system aesthetic with a new Theme Engine. Choose between the default **Dark Purple** or explore other options like the **Classic Grey** and more. Finally, an encryption tool that looks good.</p>
+                    <p class="text-gray-400">Match your system aesthetic with a new Theme Engine. Choose between the beautiful default Cosmic Purple or explore other options like Classic Gray and more. Finally, an encryption tool that looks good.</p>
                 </div>
                 
                 <!-- Feature 3: Envelope Encryption -->
@@ -132,7 +133,7 @@
                         <i data-lucide="scan" class="w-6 h-6 text-white"></i>
                     </div>
                     <h4 class="text-xl font-semibold mb-3 text-gray-50">Authenticated Encryption</h4>
-                    <p class="text-gray-400">Leverages superior **Envelope Encryption**. Each file gets a unique key, which is then secured by your master key. No weak shared secrets, just pure cryptographic integrity.</p>
+                    <p class="text-gray-400">Leverages superior Envelope Encryption. Each file gets a unique key, which is then secured by your master key. No weak shared secrets, just pure cryptographic integrity.</p>
                 </div>
 
             </div>
@@ -155,15 +156,15 @@
                     <ul class="space-y-4">
                         <li class="flex items-start">
                             <i data-lucide="check-circle" class="w-6 h-6 text-emerald-500 mr-3 mt-1 flex-shrink-0"></i>
-                            <span class="text-gray-300">**Fernet Standard:** Utilizes the industry-recommended Fernet spec (AES-128 GCM) for confidentiality and integrity checking.</span>
+                            <span class="text-gray-300"><strong>Fernet Standard:</strong> Utilizes the industry-recommended Fernet spec (AES-128 GCM) for confidentiality and integrity checking. <small class="ml-1 text-violet-400">*test</small></span>
                         </li>
                         <li class="flex items-start">
                             <i data-lucide="check-circle" class="w-6 h-6 text-emerald-500 mr-3 mt-1 flex-shrink-0"></i>
-                            <span class="text-gray-300">**No Static IVs/Salts:** Learns from common cryptographic pitfalls, using unique random elements for every encryption session.</span>
+                            <span class="text-gray-300"><strong>No Static IVs/Salts:</strong> Learns from common cryptographic pitfalls, using unique random elements for every encryption session. <small class="ml-1 text-violet-400">*test</small></span>
                         </li>
                         <li class="flex items-start">
                             <i data-lucide="check-circle" class="w-6 h-6 text-emerald-500 mr-3 mt-1 flex-shrink-0"></i>
-                            <span class="text-gray-300">**ASVM Philosophy:** The Advanced System Verification Module philosophy ensures the application environment is constantly checked for integrity.</span>
+                            <span class="text-gray-300"><strong>ASVM Philosophy:</strong> The Advanced System Verification Module philosophy ensures the application environment is constantly checked for integrity. <small class="ml-1 text-violet-400">*test</small></span>
                         </li>
                     </ul>
                 </div>
@@ -192,28 +193,67 @@
         </div>
     </section>
 
+    <!-- New Dedicated Download Page Section -->
+    <section id="download-page" class="py-16 md:py-24 bg-gray-800 border-t border-b border-gray-700">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h3 class="text-4xl font-extrabold mb-6 text-gray-50">Select Your Download</h3>
+            <p class="text-gray-400 max-w-xl mx-auto text-lg mb-12">
+                Choose the version that fits your needs: the rock-solid stable release or the bleeding-edge beta.
+            </p>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Button 1: Download Latest (Primary) -->
+                <a href="YOUR_LATEST_DOWNLOAD_LINK"
+                   class="block p-6 rounded-2xl bg-violet-600 hover:bg-violet-700 text-white font-bold text-lg 
+                          shadow-2xl shadow-violet-500/30 transition duration-300 transform hover:scale-[1.05] border-2 border-violet-600">
+                    <i data-lucide="package" class="w-8 h-8 mx-auto mb-2"></i>
+                    <span class="text-2xl block">Download Latest</span>
+                    <span class="text-sm block opacity-80 mt-1">Version 3.0.0 (Stable)</span>
+                </a>
+
+                <!-- Button 2: Download Beta (Secondary/Warning) -->
+                <a href="YOUR_BETA_DOWNLOAD_LINK"
+                   class="block p-6 rounded-2xl bg-gray-700 hover:bg-gray-600 text-gray-100 font-bold text-lg 
+                          shadow-lg shadow-gray-900/50 transition duration-300 transform hover:scale-[1.05] border-2 border-gray-700">
+                    <i data-lucide="flask-conical" class="w-8 h-8 mx-auto mb-2"></i>
+                    <span class="text-2xl block">Download Beta</span>
+                    <span class="text-sm block opacity-80 mt-1">Experimental Features</span>
+                </a>
+
+                <!-- Button 3: View Source (Tertiary) -->
+                <a href="https://github.com/AVXAdvanced/FFE" target="_blank"
+                   class="block p-6 rounded-2xl bg-gray-700 hover:bg-gray-600 text-gray-100 font-bold text-lg 
+                          shadow-lg shadow-gray-900/50 transition duration-300 transform hover:scale-[1.05] border-2 border-gray-700">
+                    <i data-lucide="github" class="w-8 h-8 mx-auto mb-2"></i>
+                    <span class="text-2xl block">View Source</span>
+                    <span class="text-sm block opacity-80 mt-1">Transparency is Key</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
     <!-- Call to Action Footer -->
     <footer class="mt-16 py-12 bg-gray-900 border-t border-gray-800">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h4 class="text-2xl font-bold mb-4 text-gray-50">Ready to secure your files?</h4>
             <p class="text-gray-400 mb-6">
-                Download the latest stable version (3.0.0) and ditch the depressing view count.
+                Get started securing your data now by choosing the version that's right for you.
             </p>
-            <a href="YOUR_DOWNLOAD_LINK_HERE" 
+            <a href="#download-page" 
                class="inline-flex items-center px-8 py-3 border border-transparent text-lg font-medium rounded-xl shadow-2xl text-white bg-violet-600 hover:bg-violet-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-violet-500 transition duration-300 transform hover:scale-[1.03]">
-                <i data-lucide="download" class="w-5 h-5 mr-3"></i>
-                Download FFE 3.0.0 Now
+                <i data-lucide="package" class="w-5 h-5 mr-3"></i>
+                Go to Downloads
             </a>
             <p class="text-sm text-gray-600 mt-8">
-                (c) 2025 Lyra Development. Built by AVX_Advanced.
+                (c) 2025 AVX_Advanced. All Rights Reserved.
             </p>
         </div>
     </footer>
 
-    <!-- Initialize Lucide Icons -->
+    <!-- Initialize Lucide Icons Script -->
     <script>
         document.addEventListener("DOMContentLoaded", function() {
-            // Replaces all <i> elements with Lucide icons (must be imported in head)
+            // Initialize Lucide Icons
             lucide.createIcons();
         });
     </script>
