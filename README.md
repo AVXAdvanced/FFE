@@ -1,5 +1,6 @@
 # Friend File Encryptor (FFE)
 
+>**Caution** | Some Information on this page may refer to an upcoming release.
 
 >**Caution** | Please disregard the Security Policy page. It is outdated and yet to be updated.
 
@@ -8,7 +9,7 @@
 [![issues](https://img.shields.io/github/issues/AVXAdvanced/FFE?color=FF5D62&style=for-the-badge)](https://github.com/AVXAdvanced/FFE/issues)
 [![size](https://img.shields.io/github/repo-size/AVXAdvanced/FFE?color=76946A&style=for-the-badge)](https://github.com/AVXAdvanced/FFE)
 
-![ffe_gh_banner_v2_large](https://drive.google.com/uc?export=view&id=1rSWo2_7guMet-WmwjDGXVA-RsF4WAhXn)
+![ffe_gh_banner_v3_usableres](https://drive.google.com/uc?export=view&id=1yTb4g2_CiIZIJvs8g2lwxWtuqWqHKh3o)
 
 ## Introduction
 
@@ -22,10 +23,10 @@ Under the hood, FFE is powered by Python—a lightweight yet capable programming
 
 You'll need a computer with the following items to properly run FFE:
 
-- Microsoft Windows 7 (x86/x64)
+- Microsoft Windows 10 (x86/x64)
 - Microsoft Visual C++ 2015 Redistributable (x86/x64) - 14.0.23026
-- 1 GB RAM (x86), 2 GB RAM (x64)
-- 55 MB of free disk space
+- 2 GB RAM (x86), 4 GB RAM (x64)
+- 512 MB of free disk space
 
 
 ## Disclaimers & Warnings
