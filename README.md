@@ -1,9 +1,6 @@
 # Friend File Encryptor (FFE)
 
->**Caution** | Some Information on this page may refer to an upcoming release.
-
->**Caution** | Please disregard the Security Policy page. It is outdated and yet to be updated.
-
+>**Update** | FFE Version 3.0 Developer Beta 2 is available now! FFE Version 3.0 is scheduled to release soon, following the next few betas.
 
 [![stars](https://img.shields.io/github/stars/AVXAdvanced/FFE?color=7E9CD8&style=for-the-badge)](https://github.com/AVXAdvanced/FFE/stargazers)
 [![issues](https://img.shields.io/github/issues/AVXAdvanced/FFE?color=FF5D62&style=for-the-badge)](https://github.com/AVXAdvanced/FFE/issues)
