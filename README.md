@@ -6,7 +6,7 @@
 [![issues](https://img.shields.io/github/issues/AVXAdvanced/FFE?color=FF5D62&style=for-the-badge)](https://github.com/AVXAdvanced/FFE/issues)
 [![size](https://img.shields.io/github/repo-size/AVXAdvanced/FFE?color=76946A&style=for-the-badge)](https://github.com/AVXAdvanced/FFE)
 
-![ffe_gh_banner_v3_usableres](https://drive.google.com/uc?export=view&id=1yTb4g2_CiIZIJvs8g2lwxWtuqWqHKh3o)
+![ffe_gh_banner_v4_usableres](https://drive.google.com/uc?export=view&id=1izBUbW2nRhN3plLmgv-GVNsnPQIXNAlF)
 
 ## Introduction
 
