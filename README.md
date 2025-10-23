@@ -1,6 +1,6 @@
 # Friend File Encryptor (FFE)
 
->**Update** | FFE Version 3.0 Developer Beta 2 is available now! FFE Version 3.0 is scheduled to release soon, following the next few betas.
+>**Update** | FFE Version 3.0 Developer Beta 3 has been released! This release comes with new and overhauled themes, UI Fixes, Bug Fixes, and so much more! You can find it under "Betas & Development"/"ffe_102225_300_db03_lyra.pyw"! 
 
 ![OS](https://img.shields.io/badge/OS-Windows-0078D4)
 ![CPU](https://img.shields.io/badge/CPU-x86%2C%20x64-FF8C00)
