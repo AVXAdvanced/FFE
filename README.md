@@ -1,3 +1,5 @@
+![ffe_topbanner_v300_db3_rel](https://drive.google.com/uc?export=view&id=1nHp-AcGDg5hAymTA2y7Pzq9t1B0tukaf)
+
 # Friend File Encryptor (FFE)
 
 >**Update** | FFE Version 3.0 Developer Beta 3 has been released! This release comes with new and overhauled themes, UI Fixes, Bug Fixes, and so much more! You can find it under "Betas & Development"/"ffe_102225_300_db03_lyra.pyw"! 
