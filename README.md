@@ -1,4 +1,4 @@
-![ffe_topbanner_v300_db3_rel](https://drive.google.com/uc?export=view&id=1nHp-AcGDg5hAymTA2y7Pzq9t1B0tukaf)
+![ffe_topbanner_v300_db4_rel](https://drive.google.com/uc?export=view&id=1gtPGchnGlXe7jRrJ-lSlxZz-L_3FD6Vx)
 
 # Friend File Encryptor (FFE)
 
@@ -46,6 +46,21 @@ You'll need a computer with the following items to properly run FFE:
 - 2 GB RAM (x86), 4 GB RAM (x64)
 - 512 MB of free disk space
 
+## Debugging
+
+With recent FFE releases, debugging has become a breeze! To identify any errors you'd like to report, simply:
+
+### 1. Download the most recent FFE.pyw from GitHub
+
+This file is located in this repositories root, or most top-level.
+
+### Change the file type from ".pyw" to ".py". 
+
+The why behind this is that a .pyw file launches without a terminal and a .py file launches with a terminal.
+
+### Done!
+
+FFE will now spawn with a terminal that contains some debugging information!
 
 ## Disclaimers & Warnings
 
