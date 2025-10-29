@@ -1,4 +1,4 @@
-![ffe_topbanner_v300_db4_rel](https://drive.google.com/uc?export=view&id=1gtPGchnGlXe7jRrJ-lSlxZz-L_3FD6Vx)
+![ffe_topbanner_v300_db4_rel](https://drive.google.com/uc?export=view&id=1SvFA89c058fKKXmlpccipM4-r2Y-lU5f)
 
 # Friend File Encryptor (FFE)
 
