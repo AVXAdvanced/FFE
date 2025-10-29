@@ -1,64 +1,30 @@
-# Supported Versions of FFE
+# Reporting Security Vulnerabilities in FFE
 
-Below is a list of FFE versions that you will get official support for.
-FFE Versions are usually marked "Unsupported" after a large change occurred, or they just got old.
+## Introduction
 
-Here's what the statuses mean:
+If you've found a security vulnerability in a recent release of FFE and would like to report it, Thank you! Your help makes sure FFE stays safe and secure for everyone. 
 
-## Supported
+In this file, we'll outline how you can easily and privately share potential security vulnerabilities you have found with the developer(s) of Friend File Encryptor (FFE).
+Please read through the entire file before reporting any issues to make sure there aren't any issues in your report.
 
-This means that this version of FFE will continue to recieve official support for some time
-to come. 
+## Filing a report
 
-**These versions of FFE are safe to use**
+Actually reporting the issue is quite simple, as we strongly encourage you to do it.
 
-## CSO
+To contact the developer(s) of FFE, you can write an email to:
 
-CSO stands for "Community Support Only", meaning this version of FFE, though recieving no official support,
-is still relatively safe to use, though we recommend updating soon.
+neotek.avx@gmail.com
 
-CSO Versions of FFE may also include early betas, that are not in official support *yet*.
+Please outline the issue and any code related to it, in an easy to read format. 
+Note: your report must be in English.
 
-**These versions of FFE are relatively safe to use**
+## What we'll do
 
-## Unsupported
+Once we've received your report, we'll make sure to address it as quickly as possible, and you will receive a response about 2-4 business days after filing your report.
+If your issue is minor, it will most likely be implemented in the next planned release of FFE.
+If your issue is urgent, a hotfix may be released quickly.
 
-Unsupported Versions of FFE recieve no official support, are most likely outdated, and may have a different UI that may be hard
-to navigate through.
-
-We strongly recommend updating ASAP.
-
-Using an Unsupported Version of FFE is NOT SAFE.
-
-**These versions of FFE are NOT SAFE TO USE**
+### Thanks for helping keep FFE safe!
 
 
-## Support Table
 
-Below is a chart of which version of FFE
-fall into which category.
-
-Refer to it to find out if you should
-upgrade soon.
-
-
-| Version | Support Status                                         |
-| ------- | -------------------------------------------------------|
-| 2.0.1   | 🟩 Supported                                          |
-| 2.0.0   | 🟩 Supported                                            |
-| 1.1.3   | 🟥 Unsupported                                         |
-| 1.1.2   | 🟥 Unsupported                                         |
-| 1.1.1   | 🟥 Unsupported                                        |
-| 1.1.0   | 🟥 Unsupported                                        |
-| 1.0.0   | 🟥 Unsupported                                        |
-| 0.7.0   | 🟥 Unsupported                                        |  
-| 0.6.0   | 🟥 Unsupported                                        | 
-| 0.5.2   | 🟥 Unsupported                                        |
-| 0.5.1   | 🟥 Unsupported                                        |
-| 0.5.0   | 🟥 Unsupported                                        |
-
-
-Last Updated: May 8th 2025 (MST)
-
-Remember to check for updates regularly...
-Thanks for using FFE!
