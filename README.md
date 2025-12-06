@@ -2,7 +2,9 @@
 
 # Friend File Encryptor (FFE)
 
->**Update** | FFE Version 3.0 Developer Beta 5 has been released! This release comes with proper compilation support, UI Fixes, Bug Fixes, and so much more! You can find it under "Betas & Development"/"ffe_120325_300_db5.pyw"! 
+>**Update** | FFE Version 3.0.0 Developer Beta 5 has been released! This release comes with proper compilation support, UI Fixes, Bug Fixes, and so much more! You can find it under "Betas & Development"/"ffe_120325_300_db5.pyw"! 
+
+>**Update** | FFE Version 3.0.0 has been reuploaded after an important change was made.
 
 >**Notice** | The FFE Website is NOT up to date, and very Unfinished. Do NOT use it as a source of information or as a proper download method.
 
