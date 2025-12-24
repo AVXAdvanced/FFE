@@ -1,5 +1,7 @@
 ![ffe_topbanner_v300_db5_rel](https://drive.google.com/uc?export=view&id=1GMxCd8gk3ao-xmFxCWfaHxG5m9kFS5j3)
 
+![ffe_topbanner_christmas](https://drive.google.com/uc?export=view&id=11ckKiWcap-scElSJn-0VB77NINLOnuKQ)
+
 # Friend File Encryptor (FFE)
 
 >**Update** | FFE Version 3.0.0 Developer Beta 5 has been released! This release comes with proper compilation support, UI Fixes, Bug Fixes, and so much more! You can find it under "Betas & Development"/"ffe_120325_300_db5.pyw"! 
