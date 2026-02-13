@@ -2,14 +2,6 @@
 
 >**Notice** | The FFE Website is NOT up to date, and very Unfinished. Do NOT use it as a source of information or as a proper download method.
 
-![OS](https://img.shields.io/badge/OS-Windows-0078D4)
-![CPU](https://img.shields.io/badge/CPU-x86%2C%20x64-FF8C00)
-[![Free](https://img.shields.io/badge/FREE-brightgreen)](#-license)
-
-[![GitHub Release](https://img.shields.io/github/v/release/AVXAdvanced/FFE)](#)
-[![GitHub release date](https://img.shields.io/github/release-date/AVXAdvanced/FFE)](#)
-[![GitHub last commit](https://img.shields.io/github/last-commit/AVXAdvanced/FFE)](#)
-
 ![Windows](https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white)
 [![stars](https://img.shields.io/github/stars/AVXAdvanced/FFE?color=7E9CD8&style=for-the-badge)](https://github.com/AVXAdvanced/FFE/stargazers)
 [![issues](https://img.shields.io/github/issues/AVXAdvanced/FFE?color=FF5D62&style=for-the-badge)](https://github.com/AVXAdvanced/FFE/issues)
