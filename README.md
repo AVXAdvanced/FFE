@@ -1,5 +1,22 @@
 # Friend File Encryptor (FFE)
 
+
+
+![Windows](https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white)
+[![stars](https://img.shields.io/github/stars/AVXAdvanced/FFE?color=7E9CD8&style=for-the-badge)](https://github.com/AVXAdvanced/FFE/stargazers)
+[![issues](https://img.shields.io/github/issues/AVXAdvanced/FFE?color=FF5D62&style=for-the-badge)](https://github.com/AVXAdvanced/FFE/issues)
+[![size](https://img.shields.io/github/repo-size/AVXAdvanced/FFE?color=76946A&style=for-the-badge)](https://github.com/AVXAdvanced/FFE)
+
+![ffe_gh_banner_v4_usableres](https://drive.google.com/uc?export=view&id=1izBUbW2nRhN3plLmgv-GVNsnPQIXNAlF)
+
+### ⭐ Share FFE & Give us a Star on GitHub! It really helps out the project!
+
+[![Share](https://img.shields.io/badge/share-000000?logo=x&logoColor=white)](https://x.com/intent/tweet?text=Check%20out%20this%20project%20on%20GitHub:%20https://github.com/AVXAdvanced/FFE%20%23OpenIDConnect%20%23Security%20%23Authentication)
+[![Share](https://img.shields.io/badge/share-1877F2?logo=facebook&logoColor=white)](https://www.facebook.com/sharer/sharer.php?u=https://github.com/AVXAdvanced/FFE)
+[![Share](https://img.shields.io/badge/share-0A66C2?logo=linkedin&logoColor=white)](https://www.linkedin.com/sharing/share-offsite/?url=https://github.com/AVXAdvanced/FFE)
+[![Share](https://img.shields.io/badge/share-FF4500?logo=reddit&logoColor=white)](https://www.reddit.com/submit?title=Check%20out%20this%20project%20on%20GitHub:%20https://github.com/AVXAdvanced/FFE)
+[![Share](https://img.shields.io/badge/share-0088CC?logo=telegram&logoColor=white)](https://t.me/share/url?url=https://github.com/AVXAdvanced/FFE&text=Check%20out%20this%20project%20on%20GitHub)
+
 > [!Note]
 > Friend File Encryptor's development will cease as of November 20th 2026, 11:59 PM MST, following the release of FFE's final major feature update, Version 3.0.0.
 > Further patches following Version 3.0.0 may still be released until November 20th. Following the EOL date, all updates and support will halt, and this repository may be archived.
@@ -17,21 +34,6 @@
 
 >[!Important]
 >Make sure to back up your key files prior to upgrading to FFE 3.0.0. The Encyption system has changed and data loss may occur if you accidentally discard your old key files. You may need to decrypt and re-encrypt your files when upgrading to version 3.0.0.
-
-![Windows](https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white)
-[![stars](https://img.shields.io/github/stars/AVXAdvanced/FFE?color=7E9CD8&style=for-the-badge)](https://github.com/AVXAdvanced/FFE/stargazers)
-[![issues](https://img.shields.io/github/issues/AVXAdvanced/FFE?color=FF5D62&style=for-the-badge)](https://github.com/AVXAdvanced/FFE/issues)
-[![size](https://img.shields.io/github/repo-size/AVXAdvanced/FFE?color=76946A&style=for-the-badge)](https://github.com/AVXAdvanced/FFE)
-
-![ffe_gh_banner_v4_usableres](https://drive.google.com/uc?export=view&id=1izBUbW2nRhN3plLmgv-GVNsnPQIXNAlF)
-
-### ⭐ Share FFE & Give us a Star on GitHub! It really helps out the project!
-
-[![Share](https://img.shields.io/badge/share-000000?logo=x&logoColor=white)](https://x.com/intent/tweet?text=Check%20out%20this%20project%20on%20GitHub:%20https://github.com/AVXAdvanced/FFE%20%23OpenIDConnect%20%23Security%20%23Authentication)
-[![Share](https://img.shields.io/badge/share-1877F2?logo=facebook&logoColor=white)](https://www.facebook.com/sharer/sharer.php?u=https://github.com/AVXAdvanced/FFE)
-[![Share](https://img.shields.io/badge/share-0A66C2?logo=linkedin&logoColor=white)](https://www.linkedin.com/sharing/share-offsite/?url=https://github.com/AVXAdvanced/FFE)
-[![Share](https://img.shields.io/badge/share-FF4500?logo=reddit&logoColor=white)](https://www.reddit.com/submit?title=Check%20out%20this%20project%20on%20GitHub:%20https://github.com/AVXAdvanced/FFE)
-[![Share](https://img.shields.io/badge/share-0088CC?logo=telegram&logoColor=white)](https://t.me/share/url?url=https://github.com/AVXAdvanced/FFE&text=Check%20out%20this%20project%20on%20GitHub)
 
 ## Introduction
 
