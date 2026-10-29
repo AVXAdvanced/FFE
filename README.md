@@ -1,6 +1,22 @@
 # Friend File Encryptor (FFE)
 
->**Notice** | The FFE Website is NOT up to date, and very Unfinished. Do NOT use it as a source of information or as a proper download method.
+> [!Note]
+> Friend File Encryptor's development will cease as of November 20th 2026, 11:59 PM MST, following the release of FFE's final major feature update, Version 3.0.0.
+> Further patches following Version 3.0.0 may still be released until November 20th. Following the EOL date, all updates and support will halt, and this repository may be archived.
+> 
+> This decision is being made for several reasons, including lack of project viability, FFE being incredibly hard to update and maintain, and a lack of users.
+> Turns out a 10,000 line python program is not an ideal security platform.
+>
+> Nonetheless, FFE served as a great learning experience for me, even if it wasn't the most successful.
+> 
+> Thank You to everyone who supported, downloaded, and/or used Friend File Encryptor in these past years. I will be forever grateful for any support this project recieved.
+
+> [!Caution]
+> Please make sure to decrypt and back up your personal files and prepare to switch to an alternative encryption program, as FFE will be vulnerable to attacks from
+> malicious entities once updates end. As bug fixes end, a fault in FFE could also lead to data loss, in the form of a pre-existing bug or in the form of anything FFE relies on updating, such as Windows or Python.
+
+>[!Important]
+>Make sure to back up your key files prior to upgrading to FFE 3.0.0. The Encyption system has changed and data loss may occur if you accidentally discard your old key files. You may need to decrypt and re-encrypt your files when upgrading to version 3.0.0.
 
 ![Windows](https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white)
 [![stars](https://img.shields.io/github/stars/AVXAdvanced/FFE?color=7E9CD8&style=for-the-badge)](https://github.com/AVXAdvanced/FFE/stargazers)
