@@ -28,11 +28,11 @@
 > 
 > Thank You to everyone who supported, downloaded, and/or used Friend File Encryptor in these past years. I will be forever grateful for any support this project recieved.
 
-> [!Caution]
+> [!Important]
 > Please make sure to decrypt and back up your personal files and prepare to switch to an alternative encryption program, as FFE will be vulnerable to attacks from
 > malicious entities once updates end. As bug fixes end, a fault in FFE could also lead to data loss, in the form of a pre-existing bug or in the form of anything FFE relies on updating, such as Windows or Python.
 
->[!Important]
+>[!Caution]
 >Make sure to back up your key files prior to upgrading to FFE 3.0.0. The Encyption system has changed and data loss may occur if you accidentally discard your old key files. You may need to decrypt and re-encrypt your files when upgrading to version 3.0.0.
 
 ## Introduction
